@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css">
     <!-- Custom -->
     <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Script -->
     <!-- JQuery -->
@@ -42,22 +45,61 @@
                     <b>Steve Jobs</b><br />
                     FORMER CEO, APPLE
                 </div>
+                <div class="social-container flex-center">
+                    <a href="#">
+                        <i class="fa fa-facebook icon-3d" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram icon-3d" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter icon-3d" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- About (A little about exabyte's past) -->
         <div class="section sec2">
-            <h2>About eXabyte</h2>
-            <p>In this current accelerating society, only one thing remains un-changeable-CHANGE. We never know what
-                technology tomorrow will gift us. Hence in this changing world, we affirm to align ourselves with the
-                changing times and try to get a glimpse of what future would be like.</p>
-            <p>We, at the Department of Computer Science of St. Xavier's College (Autonomous), Kolkata, bring to you
-                "eXabyte" 2020 - "Envisage the Future" on the 19th and 20th of February, 2020. As an exemplar to
-                showcase our eminence in the world of technology, we strive to bring together future legionaries of the
-                technological arena and kindle in them a thirst for answers, quest for horizons</p>
+            <div id="aboutWrapper" class="container text-center text-light">
+                <h2>About eXabyte</h2>
+                <p>In this current accelerating society, only one thing remains un-changeable-CHANGE. We never know what
+                    technology tomorrow will gift us. Hence in this changing world, we affirm to align ourselves with
+                    the
+                    changing times and try to get a glimpse of what future would be like.</p>
+                <p>We, at the Department of Computer Science of St. Xavier's College (Autonomous), Kolkata, bring to you
+                    "eXabyte" 2020 - "Envisage the Future" on the 19th and 20th of February, 2020. As an exemplar to
+                    showcase our eminence in the world of technology, we strive to bring together future legionaries of
+                    the
+                    technological arena and kindle in them a thirst for answers, quest for horizons</p>
+            </div>
         </div>
         <!-- Countdown (self explanatory) -->
         <div class="section sec3">
             <h2>Countdown</h2>
+            <div class="container-timer text-dark text-center">
+                <ul class="text-center">
+                    <li class="time">
+                        <div id="days" class="ph"></div>
+                        <br>
+                        <p class="day-hour-min-sec">Days</p>
+                    </li>
+                    <li class="time">
+                        <div id="hours" class="ph"></div>
+                        <br>
+                        <p class="day-hour-min-sec">Hours</p>
+                    </li>
+                    <li class="time">
+                        <div id="minutes" class="ph"></div>
+                        <br>
+                        <p class="day-hour-min-sec">Minutes</p>
+                    </li>
+                    <li class="time">
+                        <div id="seconds" class="ph"></div>
+                        <br>
+                        <p class="day-hour-min-sec">Seconds</p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- Events & Schedule (Overview, must contain a redirection to the real page) -->
         <div class="section sec4">
