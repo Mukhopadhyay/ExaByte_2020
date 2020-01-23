@@ -1,9 +1,21 @@
 .sec1 {
-    background-color: yellow;
+    background-color: lightyellow;
 }
 .sec1 h1 {
     margin-top: 5rem;
 }
+.sec1 .logo {
+    width: 150px;
+}
+#homeWrapper {
+    margin-top: 5rem;
+    align-content: center;
+}
+.homeTexts {
+    margin-top: 8rem;
+}
+
+
 .sec2 {
     background-color: red;
 }
@@ -18,4 +30,10 @@
 }
 .sec6 {
     background-color: aqua;
+}
+
+
+/*Pagepiling override*/
+#pp-nav {
+    display: none;
 }
