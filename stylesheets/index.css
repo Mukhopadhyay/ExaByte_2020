@@ -1,7 +1,11 @@
 /*Home SEction*/
 
 .sec1 {
-    background-color: lightyellow;
+    background-image: url('../images/back1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
 .sec1 h1 {
@@ -47,21 +51,23 @@
 .container-timer ul {
     list-style: none;
 }
-.container-timer ul li{
+
+.container-timer ul li {
     display: inline-block;
     margin: 2rem;
 }
+
 .container-timer ul li div {
     font-size: 3rem;
     font-weight: bolder;
 }
 
 .sec4 {
-    background-color: green;
+    background: black;
 }
 
 .sec5 {
-    background-color: bisque;
+    background-color: white;
 }
 
 .sec6 {
@@ -77,7 +83,7 @@
 /*Social icons*/
 
 .social-container {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .social-container a:hover {
@@ -88,7 +94,7 @@
     padding: 10px;
     -webkit-animation: icon3d 500ms 10;
     animation: icon3d 200ms 0;
-    color: #000;
+    color: #fff;
 }
 
 .icon-3d:hover {
@@ -97,6 +103,7 @@
 }
 
 /*Init vals*/
+
 /*
     5,4
     -5,-6
@@ -105,7 +112,6 @@
     -5,0
 
 */
-
 
 @keyframes icon3d {
     0% {
@@ -123,4 +129,51 @@
     100% {
         text-shadow: -2px 0 #f44336, 5px -4px #2196f3;
     }
+}
+
+/*Social icon positioning*/
+
+.social-container {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+
+/*Events and Schedule section*/
+
+/*Magazine*/
+
+.magazines {
+    margin-top: 3rem;
+}
+
+.carousel {
+    background: #eee;
+}
+
+.carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    display: block;
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-cell img {
+        height: 400px;
+    }
+}
+
+/* flickity override */
+.flickity-viewport {
+    background-color: none;
+}
+.flickity-button {
+    display: none;
+}
+.flickity-page-dots {
+    display: none;
 }

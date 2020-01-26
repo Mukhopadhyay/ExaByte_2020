@@ -5,7 +5,7 @@ $(document).ready(function () {
         verticalCentered: false,
         sectionsColor: [],
         anchors: [],
-        scrollingSpeed: 280,
+        scrollingSpeed: 50,
         easing: 'swing',
         loopBottom: false,
         loopTop: false,
@@ -37,6 +37,18 @@ $(document).ready(function () {
         transition: true,   // Set a transition on enter/exit.
         disableAxis: null,   // What axis should be disabled. Can be X or Y.
         reset: true,   // If the tilt effect has to be reset on exit.
+        glare: false,  // Enables glare effect
+        maxGlare: 1
+    })
+    $('.carousel-cell').tilt({
+        maxTilt: 20,
+        perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+        easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+        scale: 1,      // 2 = 200%, 1.5 = 150%, etc..
+        speed: 300,    // Speed of the enter/exit transition.
+        transition: true,   // Set a transition on enter/exit.
+        disableAxis: null,   // What axis should be disabled. Can be X or Y.
+        reset: true,   // If the tilt effect has to be reset on exit.
         glare: true,  // Enables glare effect
         maxGlare: 1
     })
@@ -58,8 +70,29 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
             document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
         //Fires the day of eXabyte            
-        if(distance < 0) {
+        if (distance < 0) {
             clearInterval(x);
         }
 
     }, second)
+
+var $carousel = $('.carousel').flickity({
+    imagesLoaded: true,
+    percentPosition: false,
+});
+
+var $imgs = $carousel.find('.carousel-cell img');
+// get transform property
+var docStyle = document.documentElement.style;
+var transformProp = typeof docStyle.transform == 'string' ?
+    'transform' : 'WebkitTransform';
+// get Flickity instance
+var flkty = $carousel.data('flickity');
+
+$carousel.on('scroll.flickity', function () {
+    flkty.slides.forEach(function (slide, i) {
+        var img = $imgs[i];
+        var x = (slide.target + flkty.x) * -1 / 3;
+        img.style[transformProp] = 'translateX(' + x + 'px)';
+    });
+});

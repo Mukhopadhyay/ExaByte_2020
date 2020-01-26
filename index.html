@@ -17,6 +17,9 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" text="text/css" href="./public/css/flickity.min.css">
+
 
     <!-- Script -->
     <!-- JQuery -->
@@ -25,7 +28,8 @@
     <script src="./public/js/jquery.pagepiling.min.js"></script>
     <!-- Tilt -->
     <script src="./public/js/tilt.jquery.js"></script>
-
+    <!-- Flickity -->
+    <script src="./public/js/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +39,7 @@
         <div class="section sec1">
             <div class="container text-center" id="homeWrapper">
                 <div class="logo-container" data-tilt>
-                    <img src="./images/logo.png" class="logo">
+                    <img src="./images/logo_placeholder.jpg" class="logo">
                 </div>
                 <div class="homeTexts">
                     <p>
@@ -48,10 +52,10 @@
                 <div class="social-container flex-center">
                     <a href="#">
                         <i class="fa fa-facebook icon-3d" aria-hidden="true"></i>
-                    </a>
+                    </a><br />
                     <a href="#">
                         <i class="fa fa-instagram icon-3d" aria-hidden="true"></i>
-                    </a>
+                    </a><br />
                     <a href="#">
                         <i class="fa fa-twitter icon-3d" aria-hidden="true"></i>
                     </a>
@@ -75,39 +79,33 @@
         </div>
         <!-- Countdown (self explanatory) -->
         <div class="section sec3">
-            <h2>Countdown</h2>
-            <div class="container-timer text-dark text-center">
-                <ul class="text-center">
-                    <li class="time">
-                        <div id="days" class="ph"></div>
-                        <br>
-                        <p class="day-hour-min-sec">Days</p>
-                    </li>
-                    <li class="time">
-                        <div id="hours" class="ph"></div>
-                        <br>
-                        <p class="day-hour-min-sec">Hours</p>
-                    </li>
-                    <li class="time">
-                        <div id="minutes" class="ph"></div>
-                        <br>
-                        <p class="day-hour-min-sec">Minutes</p>
-                    </li>
-                    <li class="time">
-                        <div id="seconds" class="ph"></div>
-                        <br>
-                        <p class="day-hour-min-sec">Seconds</p>
-                    </li>
-                </ul>
-            </div>
+            <h2>eXabyte 2020</h2>
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="minutes"></span>
+            <span id="seconds"></span>
         </div>
         <!-- Events & Schedule (Overview, must contain a redirection to the real page) -->
-        <div class="section sec4">
-            <h2>Event and schedule</h2>
+        <div class="section sec4 text-light">
+            <h1>Events and Schedule</h1>
         </div>
         <!-- Magazine (Redirection to the real page) -->
         <div class="section sec5">
-            <h2>XCryptus</h2>
+            <div class="magazineHeading text-center">
+                <h5>xCryptus</h5>
+            </div>
+            <!--For Desktops-->
+            <div class="carousel magazines">
+                <div class="carousel-cell" data-tilt>
+                  <img src="./images/temp/img1.jpg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="./images/temp/img2.jpg" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="./images/temp/img3.jpg" />
+                </div>
+              </div>
         </div>
         <!-- Sponsors -->
         <div class="section sec6">
