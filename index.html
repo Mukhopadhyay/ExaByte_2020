@@ -12,14 +12,15 @@
     <link rel="stylesheet" type="text/css" href="./public/css/jquery.pagepiling.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css">
+
     <!-- Custom -->
     <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+
     <!-- FontAwesome -->
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Flickity -->
     <link rel="stylesheet" text="text/css" href="./public/css/flickity.min.css">
-
 
     <!-- Script -->
     <!-- JQuery -->
@@ -30,24 +31,34 @@
     <script src="./public/js/tilt.jquery.js"></script>
     <!-- Flickity -->
     <script src="./public/js/flickity.pkgd.min.js"></script>
+    <!--Custom scripts-->
 </head>
 
 <body>
-
+    <div class="navLogoContainer" onclick="window.location.href='./index.html'">
+        <img src="./images/logo.png" class="navLogo">
+        <h6 class="navLogoHeading text-light">eXaByte</h6>
+    </div>
     <div id="pagepiling">
         <!-- Home / Intro (Something about exabyte) -->
         <div class="section sec1">
             <div class="container text-center" id="homeWrapper">
+
+
                 <div class="logo-container" data-tilt>
-                    <img src="./images/logo_placeholder.jpg" class="logo">
+                    <img src="./images/logo.png" class="logo">
                 </div>
                 <div class="homeTexts">
-                    <p>
+                    <p class="lead">
                         "Everyone here has the sense that right now is one of those moments when we are influencing the
                         future."
                     </p>
+
                     <b>Steve Jobs</b><br />
-                    FORMER CEO, APPLE
+                    FORMER CEO, APPLE<br />
+                    <div class="learnMoreButton">
+                        <button class="btn btn-outline-secondary">Learn More</button>
+                    </div>
                 </div>
                 <div class="social-container flex-center">
                     <a href="#">
@@ -65,51 +76,118 @@
         <!-- About (A little about exabyte's past) -->
         <div class="section sec2">
             <div id="aboutWrapper" class="container text-center text-light">
-                <h2>About eXabyte</h2>
-                <p>In this current accelerating society, only one thing remains un-changeable-CHANGE. We never know what
-                    technology tomorrow will gift us. Hence in this changing world, we affirm to align ourselves with
-                    the
-                    changing times and try to get a glimpse of what future would be like.</p>
-                <p>We, at the Department of Computer Science of St. Xavier's College (Autonomous), Kolkata, bring to you
-                    "eXabyte" 2020 - "Envisage the Future" on the 19th and 20th of February, 2020. As an exemplar to
-                    showcase our eminence in the world of technology, we strive to bring together future legionaries of
-                    the
-                    technological arena and kindle in them a thirst for answers, quest for horizons</p>
+                <div class="aboutUsHeading">
+                    <h2>About eXabyte</h2>
+                </div>
+                <div class="aboutUsParagraph">
+                    <p class="lead">In this current accelerating society, only one thing remains un-changeable-CHANGE.
+                        We never know
+                        what
+                        technology tomorrow will gift us. Hence in this changing world, we affirm to align ourselves
+                        with
+                        the
+                        changing times and try to get a glimpse of what future would be like.</p>
+                    <p class="lead">We, at the Department of Computer Science of St. Xavier's College (Autonomous),
+                        Kolkata, bring to
+                        you
+                        "eXabyte" 2020 - "Envisage the Future" on the 19th and 20th of February, 2020. As an exemplar to
+                        showcase our eminence in the world of technology, we strive to bring together future legionaries
+                        of
+                        the
+                        technological arena and kindle in them a thirst for answers, quest for horizons</p>
+                </div>
             </div>
         </div>
         <!-- Countdown (self explanatory) -->
         <div class="section sec3">
-            <h2>eXabyte 2020</h2>
-            <span id="days"></span>
-            <span id="hours"></span>
-            <span id="minutes"></span>
-            <span id="seconds"></span>
+            <div class="countDownHeader text-center">
+                <h2>eXabyte 2020</h2>
+            </div>
+            <div class="text-center countDown">
+                <span id="days"></span>
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+            </div>
         </div>
         <!-- Events & Schedule (Overview, must contain a redirection to the real page) -->
         <div class="section sec4 text-light">
-            <h1>Events and Schedule</h1>
+            <div class="eventHeader">
+                <h2 class="text-center">Events and Schedule</h2>
+            </div>
+            <a href="./eventsCarousel.html">GO TO EVENTS</a>
         </div>
         <!-- Magazine (Redirection to the real page) -->
         <div class="section sec5">
-            <div class="magazineHeading text-center">
-                <h5>xCryptus</h5>
+            <div id="magazineWrapper">
+                <div class="magazineHeading text-center">
+                    <h5>xCryptus</h5>
+                </div>
+                <!--For Desktops-->
+                <div class="carousel magazines desktop">
+                    <div class="carousel-cell" data-tilt>
+                        <img src="./images/temp/img1.jpg" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/temp/img2.jpg" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./images/temp/img3.jpg" />
+                    </div>
+                </div>
+                <!--For Mobile-->
+                <div class="container magazineContainer mobile text-center">
+                    <img src="./images/temp/img1.jpg">
+                    <div class="magazineDescription">
+                        <p>
+                            "The true sign of intelligence is not knowledge but imagination." - Albert Einstein
+                        </p>
+                        <p>
+                            This is an age where the Cryptic Codes are interacting with both the human mind and the
+                            machine. Everything is ruled by imagination. We, at the Department of Computer Science of
+                            St. Xavier’s College (Autonomous), Kolkata, try to pen down the imaginations of the smartest
+                            brains of the world and put up an effort to enlighten the innovations by imagining a
+                            colorful, creative ideal technological future.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!--For Desktops-->
-            <div class="carousel magazines">
-                <div class="carousel-cell" data-tilt>
-                  <img src="./images/temp/img1.jpg" />
-                </div>
-                <div class="carousel-cell">
-                  <img src="./images/temp/img2.jpg" />
-                </div>
-                <div class="carousel-cell">
-                  <img src="./images/temp/img3.jpg" />
-                </div>
-              </div>
         </div>
         <!-- Sponsors -->
         <div class="section sec6">
-            <h2>Sponsors</h2>
+            <!-- <a href="./sponsors.html">
+                <div class="container" style="position: relative; margin-top: 20%; color: white; font-size: 3em;
+            font-weight: bolder; text-shadow: 5px 5px 50px pink;
+            ">
+
+                    <div class="row mt-5">
+                        <div class="col-md wobble-alongX522">
+                            S
+                        </div>
+                        <div class="col-md wobble-alongY522">
+                            P
+                        </div>
+                        <div class="col-md wobble-alongX522">
+                            O
+                        </div>
+                        <div class="col-md wobble-alongY522">
+                            N
+                        </div>
+                        <div class="col-md wobble-alongX522">
+                            S
+                        </div>
+                        <div class="col-md wobble-alongY522">
+                            O
+                        </div>
+                        <div class="col-md wobble-alongX522">
+                            R
+                        </div>
+                        <div class="col-md wobble-alongY522">
+                            S
+                        </div>
+                    </div>
+                </div>
+            </a> -->
         </div>
     </div>
 

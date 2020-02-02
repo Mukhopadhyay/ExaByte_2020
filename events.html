@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Typing Animation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="preload" as="style">
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./stylesheets/eventsCSS.css">
+		
+	</head>
+	<body onload="startAnimation()"> 
+			<section class="container" style="height: 100vh;">
+			<div class="terminal">
+				<div class="tool-bar">
+					<span class="dummy-btn" style="background-color: rgb(245, 96, 96);"></span><span class="dummy-btn" style="background-color: rgb(251, 251, 118);"></span><span class="dummy-btn" style="background-color: rgb(126, 247, 126);"></span>
+					Terminal
+				</div>
+				<p class="thisP"><span class="term-addr">events@Exabyte2020</span>:~ $</p>
+			</div>
+		</section>
+		<div class="container eventsContainer">
+			<div class="row justify-content-center">
+				<div class="col-md-6"   data-tilt data-tilt-scale="1.05">
+					<div class="mx-auto mt-5 eachEvent slide-in">
+						<h1>Event name</h1>
+						<p>About eventLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<button class="registration-button">Register now</button>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-md-6" data-tilt data-tilt-scale="1.05">
+					<div class="mx-auto mt-5 eachEvent slide-in">
+						<h1>Event name</h1>
+						<p>About eventLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<button class="registration-button">Register now</button>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row justify-content-end">
+				<div class="col-md-6" data-tilt data-tilt-scale="1.05">
+					<div class="mt-5 eachEvent slide-in">
+						<h1>Event name</h1>
+						<p>About eventLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<button class="registration-button">Register now</button>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-6" data-tilt data-tilt-scale="1.05">
+					<div class="mx-auto mt-5 eachEvent slide-in">
+						<h1>Event name</h1>
+						<p>About eventLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<button class="registration-button">Register now</button>
+					</div>
+				</div>	
+			</div>
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		</div>
+	</body>
+	<script src="./scripts/eventsJS.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+	<!-- https://github.com/gijsroge/tilt.js -->
+	<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+</html>
+	

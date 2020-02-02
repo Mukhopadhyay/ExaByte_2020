@@ -1,0 +1,88 @@
+            body
+            {
+                text-align: center;
+                background-color: black;
+                background-image: url('../images/backpic1.jpg');
+                color: white;
+             }
+            .eachCard
+            {
+                background-color: black;
+                background-image: url('../images/wow.webp');
+                height: 40vh;
+                color: white;
+                box-shadow: 2px 4px 20px 2px rgba(255,255,255,1);
+            }
+            .eachLogo
+            {
+                position: relative;
+                margin-top: -5%;
+                border-radius: 50%;
+                box-shadow: 2px 4px 20px 2px rgba(255,255,255,1);
+            }
+            p
+            {
+                font-size: 2em;
+                font-weight: bolder;
+                font-family: 'Lobster Two', cursive;
+            }
+            .sponsors-title {
+	        -webkit-animation: sponsors-title 0.8s cubic-bezier(.06,.78,.17,1) both;
+	        animation: sponsors-title 0.8s cubic-bezier(.06,.78,.17,1) both;
+            }
+           .eachCard-flip {
+	        -webkit-animation: eachCard-flip 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: eachCard-flip 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 1s;
+            }
+@-webkit-keyframes sponsors-title {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes sponsors-title {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes eachCard-flip {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+            transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes eachCard-flip {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+            transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
