@@ -111,6 +111,8 @@
 .sec6 {
     background-color: aqua;
     background-image: url('../images/sponsorsBackground2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     font-size: 2em;
 }
