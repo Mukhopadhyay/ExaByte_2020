@@ -39,6 +39,7 @@ body {
 }
 
 .introText {
+    text-align: justify !important;
     font-size: 1rem;
     margin-top: 2.5rem;
     line-height: 1.6rem;
