@@ -111,3 +111,5 @@ $carousel.on('scroll.flickity', function () {
         img.style[transformProp] = 'translateX(' + x + 'px)';
     });
 });
+
+
