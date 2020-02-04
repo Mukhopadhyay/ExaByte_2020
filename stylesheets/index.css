@@ -279,13 +279,13 @@
 .sec1 .logo {
     width: 180px;
     margin-top: 2rem;
-    animation-name: zoomout;
+    /* animation-name: zoomout; */
     animation-duration: 2s ;
 }
 
 @keyframes zoomout {
     0% {
-        transform: scale(3);
+        transform: scale(1.5);
     }
     100% {
         transform: scale(1);
@@ -294,7 +294,7 @@
 
 .animation1 {
     animation-name: blurLeft;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 @keyframes blurLeft {
@@ -552,13 +552,15 @@
 }
 .social-container i {
     color: white !important;
+    animation: icon3d 100ms infinite;
+    animation-delay: 2s;
 }
 
 .social-container a:hover {
     text-decoration: none;
 }
 
-/* .icon-3d {
+.icon-3d {
     padding: 10px;
     -webkit-animation: icon3d 500ms 10;
     animation: icon3d 200ms 0;
@@ -581,7 +583,7 @@
 
 */
 
-/* @keyframes icon3d {
+@keyframes icon3d {
     0% {
         text-shadow: 2px 2px #f44336, -5px -6px #2196f3;
     }
@@ -597,7 +599,7 @@
     100% {
         text-shadow: -2px 0 #f44336, 5px -4px #2196f3;
     }
-}  */
+} 
 
 /*Social icon positioning*/
 

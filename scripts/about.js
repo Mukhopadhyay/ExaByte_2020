@@ -39,6 +39,13 @@
 //     }
 // })(window);
 $(document).ready(function () {
+    let underlineAppear = ele => {
+        ele.children[0].children[1].style.transform = "translateX( 0% )"
+    }
+    let underlineDisappear = ele => {
+        ele.children[0].children[1].style.transform = "translateX( -150% )"
+    }
+    let toggleFlag = 1;
     $('.desktopLogo').tilt({
         maxTilt: 35,
         perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
@@ -50,6 +57,24 @@ $(document).ready(function () {
         reset: true,   // If the tilt effect has to be reset on exit.
         glare: false,  // Enables glare effect
         maxGlare: 1
+    });
+
+    //Navigation
+    $(".hamburger").click(function () {
+        toggleFlag *= -1;
+        $(this).toggleClass("is-active");
+        $(".menu-overlay").toggleClass("overlay-toggle");
+        if (toggleFlag == -1) {
+            $(".menu-container").css("z-index", "1");
+            setTimeout(() => {
+                $(".menu-heading").toggleClass("heading-toggle")
+            }, 300);
+        } else {
+            $(".menu-heading").toggleClass("heading-toggle");
+            setTimeout(() => {
+                $(".menu-container").css("z-index", "-1")
+            }, 700);
+        }
     });
 
     // var node = document.getElementById('animatePara');

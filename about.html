@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>eXabyte 2020 | About Us</title>
 
+    <link rel="preload" type="text/css" href="./stylesheets/menu.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/animate.css">
 
@@ -24,6 +27,59 @@
 </head>
 
 <body>
+    <header>
+        <!-- <label class="logo"><h3>ExaByte 2020</h3></label> -->
+        <div class="animated-ham-btn">
+            <button class="ham-btn-wrapper hamburger" id="hamburger">
+                <div class="ham-stroke" style="background-color: #929292;"></div>
+                <div class="ham-stroke" style="background-color: #929292;"></div>
+                <div class="ham-stroke" style="background-color: #929292;"></div>
+            </button>
+        </div>
+    </header>
+    <div class="menu-container">
+        <div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
+            <h1 class="menu-heading">Menu</h1>
+            <ul>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="./index.html">
+                        <span class="menu-link-txt">Home</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                        <span class="menu-link-txt">Events</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                        <span class="menu-link-txt">Registration</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                        <span class="menu-link-txt">Sponsors</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                        <span class="menu-link-txt">About us</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                        <span class="menu-link-txt">Contact</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="navLogoContainer" onclick="window.location.href='./index.html'">
         <img src="./images/logo.png" class="navLogo">
         <h6 class="navLogoHeading text-light">eXaByte</h6>
@@ -92,6 +148,7 @@
     <!-- <div id="particles-js"></div> -->
     <!-- <script src="./public/js/particles.min.js"></script>
     <script src="./public/js/app.js"></script> -->
+    <script src="https://kit.fontawesome.com/5063a19621.js" crossorigin="anonymous" async></script>
 </body>
 
 </html>

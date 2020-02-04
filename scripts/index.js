@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('#pagepiling').pagepiling({
         menu: null,
         direction: 'vertical',
