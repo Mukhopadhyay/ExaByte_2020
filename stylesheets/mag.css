@@ -1,0 +1,30 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; 
+    background-image: url("/images/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel {
+    margin-top: 100px;
+ 
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
