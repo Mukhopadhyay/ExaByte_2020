@@ -27,11 +27,11 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[6];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(second1, dummy1, dummy2)
+        displayDigit(second1, dummy1, dummy2,secondsFirstDigit)
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[7];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(second2, dummy1, dummy2)
+        displayDigit(second2, dummy1, dummy2,secondsFirstDigit)
         //Minute
         /*if (Math.floor((distance % (hour)) / (minute)) < 10) {
             m = '0' + Math.floor((distance % (hour)) / (minute));
@@ -47,11 +47,11 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[4];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(minute1, dummy1, dummy2)
+        displayDigit(minute1, dummy1, dummy2,secondsFirstDigit)
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[5];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(minute2, dummy1, dummy2)
+        displayDigit(minute2, dummy1, dummy2,secondsFirstDigit)
         //Hour
         /*if (Math.floor((distance % (day)) / (hour)) < 10) {
             h = '0' + Math.floor((distance % (day)) / (hour));
@@ -67,11 +67,11 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[2];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(hour1, dummy1, dummy2)
+        displayDigit(hour1, dummy1, dummy2,secondsFirstDigit)
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[3];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(hour2, dummy1, dummy2)
+        displayDigit(hour2, dummy1, dummy2,secondsFirstDigit)
         //console.log(hour2)
 
 
@@ -81,11 +81,11 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[0];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(day1, dummy1, dummy2)
+        displayDigit(day1, dummy1, dummy2,secondsFirstDigit)
         secondsFirstDigit=document.getElementsByClassName("days7")[0].getElementsByClassName("digit")[1];
         dummy1=secondsFirstDigit.getElementsByClassName("digit-inner")[0]
         dummy2=secondsFirstDigit.getElementsByClassName("digit-inner-lower")[0]
-        displayDigit(day2, dummy1, dummy2)
+        displayDigit(day2, dummy1, dummy2,secondsFirstDigit)
         //Fires the day of eXabyte            
         if (distance < 0) {
             clearInterval(x);
@@ -93,59 +93,61 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
 
     }, second)
 
-    function displayDigit(digit, dummy1, dummy2)
+    function displayDigit(digit, dummy1, dummy2,secondsFirstDigit)
     {
+        secondsFirstDigit.style.border="none"
         switch(digit)
         {
-            case 0:dummy1.style.border="5px solid white";
+            case 0:dummy1.style.border="0.5em solid black";
                    dummy1.style.borderBottom='none'
-                   dummy2.style.border="5px solid white";
-                   dummy2.style.borderTop="none"; break; 
-                   break;
-            case 1: dummy1.style.border="none";
-                    dummy1.style.borderRight='5px solid white';
+                   dummy2.style.border="0.5em solid black";
+                   dummy2.style.borderTop="none"; break;         
+            case 1: secondsFirstDigit.style.border="0.6em solid transparent";
+                    dummy1.style.border="none";
+                    dummy1.style.borderRight='0.5em solid black';
                     dummy2.style.border="none";
-                    dummy2.style.borderRight="5px solid white"
+                    dummy2.style.borderRight="0.5em solid black"
+                    dummy2.style.borderBottom="0.5em solid transparent"
                     break;
-            case 2: dummy1.style.border="5px solid white";
+            case 2: dummy1.style.border="0.5em solid black";
                     dummy1.style.borderLeft='none'
-                    dummy2.style.border="5px solid white";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderRight="none";
                     dummy2.style.borderTop="none"; break; 
-            case 3: dummy1.style.border="5px solid white";
+            case 3: dummy1.style.border="0.5em solid black";
                     dummy1.style.borderLeft='none';
-                    dummy2.style.border="5px solid white";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderLeft="none";
                     dummy2.style.borderTop="none"; break; 
-            case 4: dummy1.style.border="5px solid white";
+            case 4: dummy1.style.border="0.5em solid black";
                     dummy1.style.borderTop='none';
-                    dummy2.style.border="5px solid white";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderLeft="none";
                     dummy2.style.borderTop="none"; 
                     dummy2.style.borderBottom="none"; 
                     break; 
-            case 5: dummy1.style.border="5px solid white";
+            case 5: dummy1.style.border="0.5em solid black";
                     dummy1.style.borderRight='none';
-                    dummy2.style.border="5px solid white";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderLeft="none";
                     dummy2.style.borderTop="none"; break;
-            case 6: dummy1.style.border="5px solid white";
+            case 6: dummy1.style.border="0.5em solid black";
                     dummy1.style.borderRight='none';
-                    dummy2.style.border="5px solid white";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderTop="none"; break;
-            case 7: dummy1.style.border="5px solid white";
+            case 7: dummy1.style.border="0.5em solid black";
                     dummy1.style.borderLeft='none';
-                    dummy2.style.border="5px solid white";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderTop="none"; 
                     dummy2.style.borderLeft='none'
                     dummy2.style.borderBottom='none'
                     break;
-            case 8: dummy1.style.border="5px solid white";
-                    dummy2.style.border="5px solid white";
+            case 8: dummy1.style.border="0.5em solid black";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderTop="none"; 
                     break;
-            case 9: dummy1.style.border="5px solid white";
-                    dummy2.style.border="5px solid white";
+            case 9: dummy1.style.border="0.5em solid black";
+                    dummy2.style.border="0.5em solid black";
                     dummy2.style.borderTop="none";
                     dummy2.style.borderLeft="none";
                     break;
