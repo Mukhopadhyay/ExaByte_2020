@@ -12,7 +12,7 @@
 	box-sizing: border-box;
 	font-family: var(--font-family)
 }
-:focus {
+*:focus {
 	outline: 0
 }
 div {
@@ -32,16 +32,16 @@ html {
 	width: var(--page-width);
 	height: var(--page-height);
 	background-color: var(--page-color);
-	/*background: url(https://www.itl.cat/pngfile/big/5-51596_hd-16-dark-desktop-wallpaper-4k.jpg) center/cover no-repeat fixed;*/
+	
 	overflow-x: hidden;
 }
 header {
-	width: inherit;
+	width: 100vw;
 	height: 80px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2
+	z-index: 100;
 }
 .logo {
 	color: var(--primary-textcolor);
@@ -84,7 +84,7 @@ header {
 	z-index: -1
 }
 .menu-container-toggle{
-	z-index: 1;
+	z-index: 100;
 }
 .menu-overlay {
 	height: inherit;

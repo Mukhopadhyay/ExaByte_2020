@@ -22,6 +22,13 @@
     <!-- Flickity -->
     <link rel="stylesheet" text="text/css" href="./public/css/flickity.min.css">
 
+    <!--  Menu -->
+    <link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+
+    <!-- Roboto Font -->
+    <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
     <!-- Script -->
     <!-- JQuery -->
     <script src="./public/js/jquery-3.4.1.min.js"></script>
@@ -40,9 +47,63 @@
 </head>
 
 <body>
-    <div class="navLogoContainer" onclick="window.location.href='./index.html'">
-        <img src="./images/logo.png" class="navLogo">
-        <h6 class="navLogoHeading text-light">eXaByte</h6>
+    
+    <header>
+        <div class="navLogoContainer" onclick="window.location.href='./index.html'">
+            <img src="./images/logo.png" class="navLogo">
+            <h6 class="navLogoHeading text-light">eXaByte</h6>
+        </div>
+        <!-- <label class="logo"><h3>ExaByte 2020</h3></label> -->
+        <div class="animated-ham-btn">
+            <button class="ham-btn-wrapper hamburger" id="hamburger" >
+                <div class="ham-stroke" style="background-color: #929292;"></div>
+                <div class="ham-stroke" style="background-color: #929292;"></div>
+                <div class="ham-stroke" style="background-color: #929292;"></div>
+            </button>
+        </div>
+    </header>
+    <div class="menu-container">
+        <div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
+            <h1 class="menu-heading">Menu</h1>
+            <ul>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="./index.html">
+                       <span class="menu-link-txt">Home</span>
+                       <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                       <span class="menu-link-txt">Events</span>
+                       <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                       <span class="menu-link-txt">Registration</span>
+                       <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                       <span class="menu-link-txt">Sponsors</span>
+                       <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                       <span class="menu-link-txt">About us</span>
+                       <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="#">
+                       <span class="menu-link-txt">Contact</span>
+                       <span class="menu-link-line"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div id="pagepiling">
         <!-- Home / Intro (Something about exabyte) -->
@@ -216,5 +277,33 @@
 
 </body>
 <script src="./scripts/index.js"></script>
+<script type="text/javascript">
+    let underlineAppear = ele => {
+        ele.children[0].children[1].style.transform = "translateX( 0% )"
+    }
+    let underlineDisappear = ele => {
+        ele.children[0].children[1].style.transform = "translateX( -150% )"
+    }
+    let toggleFlag = 1;
+
+    $( document ).ready( function(){
+        $(".hamburger").click( function () {
+            toggleFlag *= -1;
+            $( this ).toggleClass( "is-active" );
+            $( ".menu-overlay" ).toggleClass( "overlay-toggle" );
+            if( toggleFlag == -1 ){
+                $( ".menu-container" ).css( "z-index", "10" );
+                setTimeout(() => {
+                    $(".menu-heading").toggleClass("heading-toggle")
+                }, 300 );
+            }else{
+                $( ".menu-heading" ).toggleClass( "heading-toggle" ); 
+                setTimeout(() => {
+                    $( ".menu-container" ).css( "z-index", "-1" )
+                }, 700 );
+            }
+        } );
+    } );
+</script>
 
 </html>
