@@ -620,12 +620,11 @@
 
 
 .sec3 {
-    background-image: url('../images/background.jpeg');
+    background-image: url('../images/counterBackground.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    background-color: lightblue;
 }
 
 .countDownHeader {

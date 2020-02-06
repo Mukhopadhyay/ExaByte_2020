@@ -42,7 +42,7 @@ $(document).ready(function () {
         maxGlare: 1
     })
 });
-const second = 1000,
+/*const second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
@@ -90,8 +90,7 @@ let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
             clearInterval(x);
         }
 
-    }, second)
-
+    }, second)*/
 var $carousel = $('.carousel').flickity({
     imagesLoaded: true,
     percentPosition: false,
