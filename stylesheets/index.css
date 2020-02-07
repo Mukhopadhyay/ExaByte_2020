@@ -368,9 +368,7 @@
     box-shadow: 0px 2px 5px palevioletred;
 } */
 
-.logo-container img {
-  
-}
+
 
 /*Dots*/
  .dots {
@@ -612,6 +610,9 @@
 
 
 /**/
+.leadSection2 {
+    font-size: 16px;
+}
 
 .aboutUsParagraph {
     margin-top: 3rem;
