@@ -3,7 +3,7 @@
 * { box-sizing: border-box; }
 
 body { font-family: sans-serif; 
-    background-image: url("/images/back1.jpg");
+    background-image: url("/images/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -99,7 +99,7 @@ var flky = new Flickity( '.carousel', {
   // watches the content of :after of the element
   // activates if #element:after { content: 'flickity' }
 
-  wrapAround: true,
+  wrapAround: false,
   // at end of cells, wraps-around to first for infinite scrolling
  
 });
