@@ -223,3 +223,50 @@ body, html {
 }
 
 /*End of buttons*/
+
+/*Setting up backgronud for the events*/
+
+.codeplay {
+        background-image: url(./../images/codeplay.jpeg);
+        background-position: center;
+        background-size: cover;
+}
+.webbed {
+        background-image: url(./../images/webbed.jpeg);
+        background-position: center;
+        background-size: cover;
+}
+.digibit {
+        background-image: url(./../images/digibit.jpeg);
+        background-position: center;
+        background-size: cover;
+}
+.cryptx {
+        background-image: url(./../images/cryptx.jpeg);
+        background-position: center;
+        background-size: cover;
+}
+.embleed {
+        background-image: url(./../images/embleed.jpeg);
+        background-position: center;
+        background-size: cover;
+        color: black;
+}
+.embleed .eventButton .btn-custom {
+        color: black;
+}
+.crosshair {
+        background-image: url(./../images/crosshair.jpeg);
+        background-position: center;
+        background-size: cover;
+}
+.cubex {
+        background-image: url(./../images/cubex.jpeg);
+        background-position: center;
+        background-size: cover; 
+}
+.quiz {
+        background-image: url(./../images/quiz.jpeg);
+        background-position: center;
+        background-size: cover;  
+}
