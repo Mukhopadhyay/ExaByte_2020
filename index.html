@@ -15,7 +15,7 @@
 
     <!-- Custom -->
     <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
-
+    <link rel="stylesheet" type="text/css" href="./stylesheets/counterCSS.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,10 +39,6 @@
     <!-- Flickity -->
     <script src="./public/js/flickity.pkgd.min.js"></script>
     <!--Custom scripts-->
-
-    <style>
-
-    </style>
 
 </head>
 
@@ -180,18 +176,103 @@
             <div class="countDownHeader text-center">
                 <h2>eXabyte 2020</h2>
             </div>
-            <div class="text-center countDown">
+            <!--<div class="text-center countDown">
                 <span id="days">Days</span>:
                 <span id="hours">Hours</span>:
                 <span id="minutes">Minutes</span>:
                 <span id="seconds">Seconds</span>
             </div>
-            <!-- <div class="text-center">
+            <div class="text-center">
                 <span>Days</span>
                 <span>Hours</span>
                 <span>Minutes</span>
                 <span>Seconds</span>
             </div> -->
+            <div class="flex-container center days7" style="position: relative; margin-top: 20vh;">
+                <div class="flex-item digit">
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
+                </div>
+                <div class="flex-item  digit">
+                        <div class="digit-inner">
+                            9
+                        </div>
+                        <div class="digit-inner-lower">
+                            9
+                        </div>
+                </div>
+                <div class="flex-item">
+                    <div class="separator">
+                        :
+                    </div>
+                </div>
+                <!--Hours-->
+                <div class="flex-item digit">
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
+                </div>
+                <div class="flex-item  digit">
+                        <div class="digit-inner">
+                            9
+                        </div>
+                        <div class="digit-inner-lower">
+                            9
+                        </div>
+                </div>
+                <div class="flex-item">
+                    <div class="separator">
+                        :
+                    </div>
+                </div>
+                <!--Minutes-->
+                <div class="flex-item digit">
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
+                </div>
+                <div class="flex-item  digit">
+                        <div class="digit-inner">
+                            9
+                        </div>
+                        <div class="digit-inner-lower">
+                            9
+                        </div>
+                </div>
+                <div class="flex-item">
+                    <div class="separator">
+                        :
+                    </div>
+                </div>
+                <!--Seconds-->
+                <div class="flex-item digit">
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
+                </div>
+                <div class="flex-item  digit">
+                        <div class="digit-inner">
+                            9
+                        </div>
+                        <div class="digit-inner-lower">
+                            9
+                        </div>
+                </div>
+            </div>
+            
         </div>
         <!-- Events & Schedule (Overview, must contain a redirection to the real page) -->
         <div class="section sec4 text-light">
@@ -305,5 +386,5 @@
         } );
     } );
 </script>
-
+<script src="./scripts/counterJS.js"></script>
 </html>
