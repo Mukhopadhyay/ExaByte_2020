@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <div class="navLogoContainer" onclick="window.location.href='./index.html'">
             <img src="./images/logo.png" class="navLogo">
@@ -51,7 +51,7 @@
         </div>
         <!-- <label class="logo"><h3>ExaByte 2020</h3></label> -->
         <div class="animated-ham-btn">
-            <button class="ham-btn-wrapper hamburger" id="hamburger" >
+            <button class="ham-btn-wrapper hamburger" id="hamburger">
                 <div class="ham-stroke" style="background-color: #929292;"></div>
                 <div class="ham-stroke" style="background-color: #929292;"></div>
                 <div class="ham-stroke" style="background-color: #929292;"></div>
@@ -64,38 +64,38 @@
             <ul>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
                     <a href="./index.html">
-                       <span class="menu-link-txt">Home</span>
-                       <span class="menu-link-line"></span>
+                        <span class="menu-link-txt">Home</span>
+                        <span class="menu-link-line"></span>
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
                     <a href="./events.html">
-                       <span class="menu-link-txt">Events</span>
-                       <span class="menu-link-line"></span>
-                    </a>
-                </li>
-                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-                    <a href="#">
-                       <span class="menu-link-txt">Registration</span>
-                       <span class="menu-link-line"></span>
+                        <span class="menu-link-txt">Events</span>
+                        <span class="menu-link-line"></span>
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
                     <a href="./sponsors.html">
-                       <span class="menu-link-txt">Sponsors</span>
-                       <span class="menu-link-line"></span>
+                        <span class="menu-link-txt">Sponsors</span>
+                        <span class="menu-link-line"></span>
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
                     <a href="./team.html">
-                       <span class="menu-link-txt">Our team</span>
-                       <span class="menu-link-line"></span>
+                        <span class="menu-link-txt">Our team</span>
+                        <span class="menu-link-line"></span>
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
                     <a href="./contact.html">
-                       <span class="menu-link-txt">Contact</span>
-                       <span class="menu-link-line"></span>
+                        <span class="menu-link-txt">Contact</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="./about.html">
+                        <span class="menu-link-txt">About</span>
+                        <span class="menu-link-line"></span>
                     </a>
                 </li>
             </ul>
@@ -107,29 +107,30 @@
             <div class="container text-center" id="homeWrapper">
 
 
-                <div class="logo-container text-center col-6 m-auto">
+                <div class="logo-container text-center m-auto">
                     <img src="./images/logo.png" class="main-logo">
                 </div>
-                <div class="glitch" data-text="Explore the IMPOSSIBILITIES">Explore the IMPOSSIBILITIES</div>
+                <div class="glitch themeText" data-text="Explore the IMPOSSIBILITIES">Explore the IMPOSSIBILITIES</div>
                 <div class="homeTexts">
 
-                    <p class="lead animation1">
+                    <div class="animation1 introQuote">
                         <span class="animation">"Everyone has the sense</span><span class="animation"> that right now
                             is</span><span class="animation"> one of those moments</span> <span class="animation">
                             when we are influencing the</span>
                         <span class="animation">future."</span>
-                        <div class="animation1">
+                        <div class="animation1 text-center">
+                            <img src="./images/steve_fucking_jobs.jpg" class="quoteImg"><br/>
                             <b>Steve Jobs</b><br />
                             FORMER CEO, APPLE<br />
                         </div>
-                        
-                    </p>
+
+                    </div>
 
                     <!--Button-->
                     <section class="buttons animation2">
                         <a href="#" class="btn btn-custom"><span>Learn More</span></a>
                     </section>
-                    
+
 
                 </div>
                 <div class="social-container flex-center">
@@ -164,7 +165,8 @@
                         changing times and try to get a glimpse of what future would be like.
                     </p>
                     <section class="buttons animation2">
-                        <a href="#" class="btn btn-custom" onclick="window.location.href='about.html'"><span>Learn More</span></a>
+                        <a href="#" class="btn btn-custom" onclick="window.location.href='about.html'"><span>Learn
+                                More</span></a>
                     </section>
                     <!-- <button class="btn btn-outline-secondary" onclick="window.location.href='about.html'">Learn
                         more</button> -->
@@ -174,20 +176,8 @@
         <!-- Countdown (self explanatory) -->
         <div class="section sec3">
             <div class="countDownHeader text-center">
-                <h2>eXabyte 2020</h2>
+                <h2 class="countDownHeader">eXabyte 2020</h2>
             </div>
-            <!--<div class="text-center countDown">
-                <span id="days">Days</span>:
-                <span id="hours">Hours</span>:
-                <span id="minutes">Minutes</span>:
-                <span id="seconds">Seconds</span>
-            </div>
-            <div class="text-center">
-                <span>Days</span>
-                <span>Hours</span>
-                <span>Minutes</span>
-                <span>Seconds</span>
-            </div> -->
             <div class="flex-container center days7" style="position: relative; margin-top: 20vh;">
                 <div class="flex-item digit">
                     <div class="digit-inner">
@@ -198,12 +188,12 @@
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                        <div class="digit-inner">
-                            9
-                        </div>
-                        <div class="digit-inner-lower">
-                            9
-                        </div>
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
                 </div>
                 <div class="flex-item">
                     <div class="separator">
@@ -220,12 +210,12 @@
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                        <div class="digit-inner">
-                            9
-                        </div>
-                        <div class="digit-inner-lower">
-                            9
-                        </div>
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
                 </div>
                 <div class="flex-item">
                     <div class="separator">
@@ -242,12 +232,12 @@
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                        <div class="digit-inner">
-                            9
-                        </div>
-                        <div class="digit-inner-lower">
-                            9
-                        </div>
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
                 </div>
                 <div class="flex-item">
                     <div class="separator">
@@ -264,31 +254,43 @@
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                        <div class="digit-inner">
-                            9
-                        </div>
-                        <div class="digit-inner-lower">
-                            9
-                        </div>
+                    <div class="digit-inner">
+                        9
+                    </div>
+                    <div class="digit-inner-lower">
+                        9
+                    </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- Events & Schedule (Overview, must contain a redirection to the real page) -->
         <div class="section sec4 text-light">
+            <div class="eventBackground"></div>
             <div class="eventHeader">
                 <h2 class="text-center">Events and Schedule</h2>
             </div>
-            <a href="./eventsCarousel.html">GO TO EVENTS</a>
-            <a href="./contact.html">Go to contact</a>
+            <div class="container schedule-container">
+                <div class="schedule text-center">
+                    <p>Event schedule will be posted in this page shortly!
+                        <br/>Stay tuned folks!
+                    </p>
+                </div>
+            </div>
+            <div class="container text-center">
+                <!--Button-->
+                <section class="eventButton animation2">
+                    <a href="#" class="btn btn-custom" onclick="window.location.href='./events.html'"><span>Events</span></a>
+                </section>
+            </div>
         </div>
         <!-- Magazine (Redirection to the real page) -->
-        <div class="section sec5">
+        <!-- <div class="section sec5">
             <div id="magazineWrapper">
                 <div class="magazineHeading text-center">
                     <h5>xCryptus</h5>
                 </div>
-                <!--For Desktops-->
+
                 <div class="carousel magazines desktop">
                     <div class="carousel-cell">
                         <img src="./images/temp/img1.jpg" />
@@ -300,7 +302,7 @@
                         <img src="./images/temp/img3.jpg" />
                     </div>
                 </div>
-                <!--For Mobile-->
+                
                 <div class="container magazineContainer mobile text-center">
                     <img src="./images/temp/img1.jpg">
                     <div class="magazineDescription">
@@ -317,10 +319,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Sponsors -->
-        <div class="section sec6">
-            <!-- <a href="./sponsors.html">
+        <!-- <div class="section sec6">
+            <a href="./sponsors.html">
                 <div class="container" style="position: relative; margin-top: 20%; color: white; font-size: 3em;
             font-weight: bolder; text-shadow: 5px 5px 50px pink;
             ">
@@ -352,8 +354,8 @@
                         </div>
                     </div>
                 </div>
-            </a> -->
-        </div>
+            </a>
+        </div> -->
     </div>
 
 </body>
@@ -367,24 +369,25 @@
     }
     let toggleFlag = 1;
 
-    $( document ).ready( function(){
-        $(".hamburger").click( function () {
+    $(document).ready(function () {
+        $(".hamburger").click(function () {
             toggleFlag *= -1;
-            $( this ).toggleClass( "is-active" );
-            $( ".menu-overlay" ).toggleClass( "overlay-toggle" );
-            if( toggleFlag == -1 ){
-                $( ".menu-container" ).css( "z-index", "10" );
+            $(this).toggleClass("is-active");
+            $(".menu-overlay").toggleClass("overlay-toggle");
+            if (toggleFlag == -1) {
+                $(".menu-container").css("z-index", "10");
                 setTimeout(() => {
                     $(".menu-heading").toggleClass("heading-toggle")
-                }, 300 );
-            }else{
-                $( ".menu-heading" ).toggleClass( "heading-toggle" ); 
+                }, 300);
+            } else {
+                $(".menu-heading").toggleClass("heading-toggle");
                 setTimeout(() => {
-                    $( ".menu-container" ).css( "z-index", "-1" )
-                }, 700 );
+                    $(".menu-container").css("z-index", "-1")
+                }, 700);
             }
-        } );
-    } );
+        });
+    });
 </script>
 <script src="./scripts/counterJS.js"></script>
+
 </html>

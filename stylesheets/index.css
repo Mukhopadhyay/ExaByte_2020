@@ -12,6 +12,12 @@
   margin-top: 5rem;
 }
 
+.quoteImg {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  width: 80px;
+  border-radius: 50%;
+}
 
 /*logo*/
 .sec1 .main-logo {
@@ -468,20 +474,27 @@
 }
 
 
+.introQuote {
+  font-size: 13px;
+}
 
+.countDownHeader {
+  color: black;
+  font-weight: bold;
+}
 
 /*End of Dots*/
 
 .navLogoContainer img, .navLogoContainer h6 {
     width: 30px;
     position: fixed;
-    top: 15px;
-    left: 15px;
+    top: 25px;
+    left: 30px;
     z-index: 99;
 }
 .navLogoContainer h6 {
-    top: 23px;
-    margin-left: 2.5rem;
+    top: 33px;
+    margin-left: 1.7rem;
 }
 
 #homeWrapper {
@@ -492,7 +505,7 @@
 .homeTexts {
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 1rem;
 }
 
 .learnMoreButton {
@@ -688,11 +701,24 @@
 /*End of box*/
 
 .sec4 {
-    background: black;
+  background-image: url(./../images/eventBack.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .eventHeader {
-    margin-top: 2rem;
+    margin-top: 5rem;
+}
+
+.schedule-container {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+
+.eventButton {
+  margin-top: 6rem;
 }
 
 .sec5 {
@@ -973,4 +999,28 @@
         -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);
     }
+}
+
+/*Galaxy S5*/
+@media (max-width: 370px) {
+  .logo-container img{
+    width: 130px !important;
+    margin-right: 5%;
+  }
+  .themeText {
+    font-size: 1.5rem !important;
+  }
+  .quoteImg {
+    margin-top: 2rem;
+    width: 50px !important;
+  }
+  .eventHeader {
+    margin-top: 5rem;
+  }
+  .eventHeader h2 {
+    font-size: 1.2rem !important;
+  }
+  .schedule-container {
+    font-size: .8rem;
+  }
 }

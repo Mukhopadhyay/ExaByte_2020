@@ -1,80 +1,225 @@
-*{margin:0;padding:0;box-sizing:border-box;
-    font-family:Inconsolata,monospace;
-    color:#fff;font-size:18px;letter-spacing:1.1px;font-style:italic}
-    body,html{width:100vw;height:100vh;overflow-x:hidden; font-size: 1em;
-    background-image: url('../images/eventsBackground.jpg');
-    }
-    
-    .terminal{background-color:#000;width:100%;
-    height:80%;border-radius:5px;box-shadow:0 0 32px 4px #4f4f4f;padding:0 5px;
-    position: relative;
-    top: 10%;
-    }
-    .tool-bar{width:calc(100% + 10px);position:relative;left:-5px;height:30px;
-    line-height:30px;padding:0 10px;background-color:#464955;border-radius:5px 5px 0 0;
-    margin-bottom:5px}.terminal .dummy-btn{width:20px;height:20px;display:inline-flex;
-    border-radius:20px;border:1.5px solid rgba(63,59,59,.8509803921568627);margin:0 2px;
-    position:relative;top:3px;background-color:#7a7a79}.terminal table,.terminal td,
-    .terminal tr{padding-right:10px;line-height:16px}.terminal 
-    .term-addr{color:#50ffef;font-weight:700}.terminal 
-    .term-purple{color:#ff50f1}.terminal .term-yellow{color:#fff35e}
-    .terminal p:nth-child(4){display:inline-flex}.terminal 
-    .cursor-blink
-    {		height: 1.4em;
-            width: 1em;
-            background-color: white;
-            position: relative;
-            margin-left: 1em;
-            animation:blinking-cursor-animation 0.8s infinite;}
-    @keyframes blinking-cursor-animation{0%{opacity:0}100%{opacity:1}}
-    .eachEvent
-    {
-        background-color: black; 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+}
+
+body, html {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        font-size: 1em;
+        /* background-image: url('../images/eventsBackground.jpg'); */
+        background-image: url(./../images/eventBack.jpg);
+}
+
+.navLogoContainer img, .navLogoContainer h6 {
+        width: 30px;
+        position: fixed;
+        top: 25px;
+        left: 30px;
+        z-index: 99;
+}
+
+.navLogoContainer h6 {
+        top: 33px;
+        margin-left: 1.7rem;
+}
+
+.terminal {
+        background-color: #000;
+        width: 100%;
+        height: 80%;
+        border-radius: 5px;
+        box-shadow: 0 0 32px 4px #4f4f4f;
+        padding: 0 5px;
+        position: relative;
+        top: 10%;
+}
+
+.terminal * {
+        font-family: "Ubuntu";
+}
+
+.tool-bar {
+        width: calc(100% + 10px);
+        position: relative;
+        left: -5px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        background-color: #464955;
+        border-radius: 5px 5px 0 0;
+        margin-bottom: 5px
+}
+
+.terminal .dummy-btn {
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        border-radius: 20px;
+        border: 1.5px solid rgba(63, 59, 59, .8509803921568627);
+        margin: 0 2px;
+        position: relative;
+        top: 3px;
+        background-color: #7a7a79
+}
+
+.terminal table, .terminal td, .terminal tr {
+        padding-right: 10px;
+        line-height: 16px
+}
+
+.terminal .term-addr {
+        color: #50ffef;
+        font-weight: 700
+}
+
+.terminal .term-purple {
+        color: #ff50f1
+}
+
+.terminal .term-yellow {
+        color: #fff35e
+}
+
+.terminal p:nth-child(4) {
+        display: inline-flex
+}
+
+.terminal .cursor-blink {
+        height: 1.4em;
+        width: 1em;
+        background-color: white;
+        position: relative;
+        margin-left: 1em;
+        animation: blinking-cursor-animation 0.8s infinite;
+}
+
+@keyframes blinking-cursor-animation {
+        0% {
+                opacity: 0
+        }
+        100% {
+                opacity: 1
+        }
+}
+
+.eachEvent {
+        background-color: black;
         height: auto;
         color: white;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bolder;
         font-style: normal;
         text-align: center;
         padding: 10%;
-        box-shadow:0 0 32px 4px #4f4f4f;
-        background-image: url('../images/jarvis2.jpg');
-        
-    }
-    
-    .registration-button
-    {
+        box-shadow: 0 0 32px 4px #4f4f4f;
+}
+
+.eachEvent p {
+        font-size: .8rem;
+}
+
+.registration-button {
         background-color: black;
         color: white;
         padding: 2%;
         cursor: pointer;
-    }
-    .slide-in {
+}
+
+.slide-in {
         -webkit-animation: slide-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4.5s both;
         animation: slide-in 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4.5s both;
-                        }
+}
 
 @-webkit-keyframes slide-in {
-0% {
--webkit-transform: translateZ(-1400px) translateX(-1000px);
-        transform: translateZ(-1400px) translateX(-1000px);
-opacity: 0;
+        0% {
+                -webkit-transform: translateZ(-1400px) translateX(-1000px);
+                transform: translateZ(-1400px) translateX(-1000px);
+                opacity: 0;
+        }
+        100% {
+                -webkit-transform: translateZ(0) translateX(0);
+                transform: translateZ(0) translateX(0);
+                opacity: 1;
+        }
 }
-100% {
--webkit-transform: translateZ(0) translateX(0);
-        transform: translateZ(0) translateX(0);
-opacity: 1;
-}
-}
+
 @keyframes slide-in {
-0% {
--webkit-transform: translateZ(-1400px) translateX(-1000px);
-        transform: translateZ(-1400px) translateX(-1000px);
-opacity: 0;
+        0% {
+                -webkit-transform: translateZ(-1400px) translateX(-1000px);
+                transform: translateZ(-1400px) translateX(-1000px);
+                opacity: 0;
+        }
+        100% {
+                -webkit-transform: translateZ(0) translateX(0);
+                transform: translateZ(0) translateX(0);
+                opacity: 1;
+        }
 }
-100% {
--webkit-transform: translateZ(0) translateX(0);
-        transform: translateZ(0) translateX(0);
-opacity: 1;
+
+/*Buttons*/
+
+.btn {
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        margin: 0 0 2em;
+        max-width: 160px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
 }
+
+.btn-custom {
+        /* border-radius: 255px 15px 25px 25px/25px 225px 65px 255px; */
+        border-radius: 30px 30px 30px;
+        border: 1px solid rgba(224, 218, 218, 0.829);
+        /* border-style: inset; */
+        overflow: hidden;
+        position: relative;
+        transition: 1s;
 }
+
+.btn-custom span {
+        z-index: 50;
+}
+
+.btn-custom:after {
+        /* background: #fff; */
+        background-image: linear-gradient(to left, transparent, white, transparent);
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+        -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 2.5s cubic-bezier(0.30, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10;
+}
+
+.btn-custom:hover {
+        border-radius: 0px;
+        /* transform: scale(1.1); */
+        color: white;
+        /* box-shadow: 0px 5px 10px rgba(255,255,255,0.2); */
+        /* border-radius: 0px 30px 0px!important; */
+        /* border: 1px dotted rgba(255,255,255,0.2); */
+        /* transform: scale(1.05); */
+}
+
+.btn-custom:hover:after {
+        left: 120%;
+        -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 2s cubic-bezier(0.20, 1, 0.22, 1);
+}
+
+/*End of buttons*/
