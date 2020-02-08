@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 /*Home SEction*/
 
-.sec1 {
-  /*background-image: url('../images/back5.jpeg');*/
-  /*background-position: center;
+.sec1 { 
+  background-image: url('../images/back8.jpg');
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: white;*/
+  color: white;
 }
 
 /*.sec1 h1 {
   margin-top: 5rem;
 }*/
 
-./*quoteImg {
+/*.quoteImg {
   margin-top: .5rem;
   margin-bottom: .5rem;
   width: 80px;
@@ -29,20 +29,20 @@
   animation-duration: 3s;
 }
 */
-@keyframes popdown {
+/* @keyframes popdown {
   0% {
     margin-top: -50rem;
     opacity: 0.5;
   }
   100% {
-    /* margin-top: 0rem; */
+    margin-top: 0rem;
   }
-}
+} */
 
-.animation1 {
+/* .animation1 {
   animation-name: blurRight;
   animation-duration: 4s;
-}
+} */
 
 /*@keyframes blurRight {
   0%, 50% {
@@ -61,19 +61,19 @@
   animation-duration: 3s;
 }
 */
-@keyframes blurLeft {
+/* @keyframes blurLeft {
   0% {
     margin-top: 60rem;
-    /* filter: blur(100px); */
+    filter: blur(100px);
     opacity: 0;
   }
   100% {
-    margin-top: 1rem;
+    margin-top: 1rem; */
     /* margin-bottom: 0rem; */
-    filter: blue(0px);
+    /* filter: blue(0px);
     opacity: 1;
   }
-}
+} */
 
 /*Glitch*/
 
