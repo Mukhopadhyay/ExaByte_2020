@@ -6,7 +6,7 @@
     minutes = document.getElementById('minutes'),
     hours = document.getElementById('hours'),
     days = document.getElementById('days');*/
-let countDown = new Date('Feb 22, 2020 00:00:00').getTime(),
+let countDown = new Date('Feb 19, 2020 00:00:00').getTime(),
     x = setInterval(function () {
 
         let now = new Date().getTime(),

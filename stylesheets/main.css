@@ -10,7 +10,7 @@ font-family: 'Sigmar One', cursive;
 */
 
 :root{
-	--page-font-family: 'Delius', sans-serif;
+	/* --page-font-family: 'Delius', sans-serif; */
 	--page-font-size: 16px;
 	--page-font-color: white;
 	--page-width:100vw;
@@ -74,7 +74,7 @@ header .exabyte-logo{
 }
 header .exabyte-logo-text{
 	color: var( --page-font-color );
-	font-family: 'Sigmar One', cursive;
+	/* font-family: 'Sigmar One', cursive; */
 	font-size: 18px;
 	margin: 0;
 	margin-left: 5px;
@@ -142,7 +142,7 @@ header .img-logo-sm{
 	overflow: hidden;
 	transform: translateY(50px);
 	transition: .3s ease-out transform;
-	font-family: 'Delius', cursive;
+	/* font-family: 'Delius', cursive; */
 }
 .heading-toggle {
 	transform: translateY(0)
@@ -173,7 +173,7 @@ header .img-logo-sm{
 	position: absolute;
 	transition: .3s ease-out color;
 	letter-spacing: 1.2px;
-	font-family: 'Delius', cursive;
+	/* font-family: 'Delius', cursive; */
 }
 .menu-overlay ul li a:hover {
 	color: var( --page-font-color )
@@ -299,7 +299,7 @@ https://thumbs.gfycat.com/DecimalBlandArabianwildcat-size_restricted.gif
 .content-wrapper .caption,
 .content-wrapper .quote{
 	color: white;
-	font-family: 'Amaranth', cursive !important;
+	/* font-family: 'Amaranth', cursive !important; */
 	letter-spacing: 1.1px;
 	text-shadow: 0 0 32px #31427b;
 }
@@ -310,7 +310,7 @@ https://thumbs.gfycat.com/DecimalBlandArabianwildcat-size_restricted.gif
 	line-height: 16px;
 }
 .content-wrapper .quote span{
-	font-family: 'Amaranth', cursive !important;
+	/* font-family: 'Amaranth', cursive !important; */
 }
 .content-wrapper .scroll-down{
 	width: 18px;

@@ -2,7 +2,7 @@
 /*Home SEction*/
 
 .sec1 {
-  background-image: url('../images/back8.jpg');
+  background-image: url('../images/background.jpeg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -333,6 +333,12 @@
   font-weight: bold;
 }
 
+.sec4 .btn-custom {
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
 .btn-custom span {
   z-index: 50;
 }
@@ -544,12 +550,13 @@
 /*About Section*/
 
 .sec2 {
-  background-image: url('../images/abstract/paper.jpg');
+  background-image: url('../images/abstract/poly.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 /**/
 
@@ -659,7 +666,7 @@
 }
 
 .sec3 {
-  background-image: url('../images/counterBackground.jpg');
+  background-image: url('../images/abstract/lowpoly.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -720,11 +727,12 @@
 /*End of box*/
 
 .sec4 {
-  background-image: url(./../images/eventBack.jpg);
+  background-image: url(./../images/abstract/building.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  color: black;
 }
 
 .eventHeader {
