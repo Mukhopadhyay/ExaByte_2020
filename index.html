@@ -29,7 +29,8 @@
     <!-- Roboto Font -->
     <!-- <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"> -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto|Amaranth|Delius|Sigmar+One&display=swap">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto|Amaranth|Delius|Sigmar+One&display=swap">
 
     <!-- Script -->
     <!-- JQuery -->
@@ -47,9 +48,10 @@
 <body>
 
     <header>
-        <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png" class="img-logo-sm"><label class="exabyte-logo-text">eXabyte 2020</label></div>
+        <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
+                class="img-logo-sm"><label class="exabyte-logo-text">eXabyte 2020</label></div>
         <div class="animated-ham-btn">
-            <button class="ham-btn-wrapper hamburger" id="hamburger" >
+            <button class="ham-btn-wrapper hamburger" id="hamburger">
                 <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
                 <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
                 <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
@@ -103,33 +105,39 @@
         <!-- Home / Intro (Something about exabyte) -->
         <div class="section sec1">
             <div class="page home">
-                <div class="bg-video"></div>
-                <div id="viewport"></div>
+                <!-- <div class="bg-video"></div> -->
+                <!-- <div id="viewport"></div> -->
                 <div class="bg-overlay">
                     <div class="content-wrapper">
                         <img src="images/logo_lg.png" class="img-logo-lg">
                         <h2 class="caption"></h2>
                         <p class="quote">
-                        
+
                         </p>
                         <span style="margin-top: 20px;">
-                            <a class="btn-home btn-goto">
+                            <a class="btn-home btn-goto" href="./events.html">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 Events
                             </a>
-                            <a class="btn-home btn-goto">
+                           <!--  <a class="btn-home btn-goto">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 Register
-                            </a>
+                            </a> -->
                         </span>
                         <a class="scroll-down">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down" class="svg-inline--fa fa-angle-double-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" style="fill: rgba(228, 228, 228, 0.8196078431372549);" d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"></path></svg>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down"
+                                class="svg-inline--fa fa-angle-double-down fa-w-10" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor" style="fill: rgba(228, 228, 228, 0.8196078431372549);"
+                                    d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z">
+                                </path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -139,11 +147,11 @@
         <div class="section sec2">
             <div id="aboutWrapper" class="container text-center text-light">
                 <div class="aboutUsHeading exabyte col-6 m-auto">
-                    <p>About E<span>X</span>ABYTE</p>
+                    <p class="text-light">About E<span>X</span>ABYTE</p>
                     <!-- <h2 class=" col-6 m-auto">About eXabyte</h2> -->
                 </div>
-                <div class="aboutUsParagraph">
-                    <p class="lead leadSection2">
+                <div class="aboutUsParagraph ">
+                    <p class="lead leadSection2 text-dark">
                         In this current accelerating society, only one thing remains un-changeable-CHANGE.
                         We never know
                         what
@@ -153,9 +161,30 @@
                         changing times and try to get a glimpse of what future would be like.
                     </p>
                     <section class="buttons animation2">
-                        <a href="#" class="btn btn-custom" onclick="window.location.href='about.html'"><span>Learn
-                                More</span></a>
+                        <a class="btn-home btn-goto" href="./events.html" style="color: #262323; opacity:1;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Learn More
+                    </a>
                     </section>
+                    <!-- <a class="btn-home btn-goto" href="./events.html" style="color: #262323">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Events
+                    </a> -->
+                    <a class="scroll-down scroll-down-anim" style="display: inline-block;">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down"
+                            class="svg-inline--fa fa-angle-double-down fa-w-10" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 18px; margin-top: 20px;">
+                            <path fill="currentColor" style="fill: #5a5757"
+                                d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z">
+                            </path>
+                        </svg>
+                    </a>
                     <!-- <button class="btn btn-outline-secondary" onclick="window.location.href='about.html'">Learn
                         more</button> -->
                 </div>
@@ -250,10 +279,20 @@
                     </div>
                 </div>
             </div>
-
+            <center>
+             <a class="scroll-down scroll-down-anim" style="display: inline-block;">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down"
+                      class="svg-inline--fa fa-angle-double-down fa-w-10" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="width: 18px; margin-top: 20px;">
+                      <path fill="currentColor" style="fill: #000"
+                          d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z">
+                      </path>
+                  </svg>
+               </a>
+            </center>
         </div>
         <!-- Events & Schedule (Overview, must contain a redirection to the real page) -->
-        <div class="section sec4 text-light">
+        <div class="section sec4">
             <div class="eventBackground"></div>
             <div class="eventHeader">
                 <h2 class="text-center">Events and Schedule</h2>
@@ -261,15 +300,32 @@
             <div class="container schedule-container">
                 <div class="schedule text-center">
                     <p>Event schedule will be posted in this page shortly!
-                        <br/>Stay tuned folks!
+                        <br />Stay tuned folks!
                     </p>
                 </div>
             </div>
             <div class="container text-center">
                 <!--Button-->
-                <section class="eventButton animation2">
-                    <a href="#" class="btn btn-custom" onclick="window.location.href='./events.html'"><span>Events</span></a>
-                </section>
+                <!-- <section class="eventButton animation2">
+                    <a href="#" class="btn btn-custom"
+                        onclick="window.location.href='./events.html'"><span>Events</span></a>
+                </section> -->
+                <span style="position: relative; top: 20px;">
+                   <a class="btn-home btn-goto" href="./events.html" style="color: #262323; opacity:1;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Events
+                    </a>
+                    <a class="btn-home btn-goto" href="./events.html" style="color: #262323; opacity:1;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Rules
+                    </a>
+                 </span>
             </div>
         </div>
         <!-- Magazine (Redirection to the real page) -->
@@ -378,11 +434,11 @@
 </script>
 <script src="./scripts/counterJS.js"></script>
 <script type="text/javascript">
-    $( function(){
-            let a = 0;
-            for(; a < 25; a += 1 ){
-                setTimeout( function b() {
-                    let a = Math.random() * 1e3 + 5e3,
+    $(function () {
+        let a = 0;
+        for (; a < 25; a += 1) {
+            setTimeout(function b() {
+                let a = Math.random() * 1e3 + 5e3,
                     c = $("<div />", {
                         "class": "smoke",
                         css: {
@@ -392,90 +448,90 @@
                             height: Math.random() * 600
                         }
                     });
-                    $( c ).addClass( "animated" );
-                    $( c ).addClass( "zoomIn" );
-                    $( c ).addClass( "rollOut" );
-                    $( c ).appendTo( "#viewport" );
-                    $.when( $( c ).animate( {}, {
-                        duration: a / 4,
-                        easing: "linear",
-                        queue: false,
-                        complete: function() {
-                            $( c ).animate({}, {
-                                duration: a / 3,
-                                easing: "linear",
-                                queue: false
-                            })
-                        }
-                    } ),
-                    $( c ).animate( {
-                        bottom: $( "#viewport" ).height()
-                    },{
+                $(c).addClass("animated");
+                $(c).addClass("zoomIn");
+                $(c).addClass("rollOut");
+                $(c).appendTo("#viewport");
+                $.when($(c).animate({}, {
+                    duration: a / 4,
+                    easing: "linear",
+                    queue: false,
+                    complete: function () {
+                        $(c).animate({}, {
+                            duration: a / 3,
+                            easing: "linear",
+                            queue: false
+                        })
+                    }
+                }),
+                    $(c).animate({
+                        bottom: $("#viewport").height()
+                    }, {
                         duration: a,
                         easing: "linear",
                         queue: false
-                    } ) ).then( function() {
-                        $( c ).remove();
+                    })).then(function () {
+                        $(c).remove();
                         b()
-                    } )
-                }, Math.random() * 3e3 )
-            }
-            $( ".home" ).keypress( function(){
-                $( '.home' ).addClass( "fadeOut" );
-            } );
-        }() )
-
-
-
-        let caption = "Exploring the impossibilities";
-        let quote = "Everyone has the sense that right now is one of those moments when we are influencing the future.";
-        let by = " <br>- Steve Jobs";
-        let typeDelay = 100;
-
-        let typingAnimation = () => {
-            let captionEle = document.querySelector( ".caption" );
-            let quoteEle = document.querySelector( ".quote" );
-            let buttonGoto = document.querySelectorAll( ".btn-goto" );
-            let downArrowEle = document.querySelector( ".scroll-down" );
-
-            let txtNode, index = 0, char;
-            let typeInterval = setInterval( () => {
-                if( char = caption.charAt( index ) ){
-                    txtNode = document.createTextNode( char );
-                    captionEle.appendChild( txtNode );
-                    ++index;
-                }else {
-                    clearInterval( typeInterval );
-                    index = 0;
-                    setTimeout( () => {
-                        typeInterval = setInterval( () => {
-                            if( char = quote.charAt( index ) ){
-                                txtNode = document.createTextNode( char );
-                                quoteEle.appendChild( txtNode );
-                                ++index;
-                            }else{
-                                clearInterval( typeInterval );
-                                index = 0;
-                                setTimeout( () => {
-                                    let byEle = document.createElement( "span" );
-                                    byEle.innerHTML = by;
-                                    byEle.style.float = "right";
-                                    quoteEle.appendChild( byEle );
-                                    buttonGoto[ 0 ].style.opacity = "1";
-                                    buttonGoto[ 1 ].style.opacity = "1";
-                                    downArrowEle.classList.add( "scroll-down-anim" );
-                                }, 500 );
-                            }
-                        },( typeDelay - 50 ) );
-                    },1000 );
-                }
-            }, typeDelay );
+                    })
+            }, Math.random() * 3e3)
         }
-        window.addEventListener( 'load', () => {
-            setTimeout( () => {
-                typingAnimation();
-            }, 3000 ); 
-        } )
+        $(".home").keypress(function () {
+            $('.home').addClass("fadeOut");
+        });
+    }())
+
+
+
+    let caption = "Exploring the impossibilities";
+    let quote = "Everyone has the sense that right now is one of those moments when we are influencing the future.";
+    let by = " <br>- Steve Jobs";
+    let typeDelay = 10;
+
+    let typingAnimation = () => {
+        let captionEle = document.querySelector(".caption");
+        let quoteEle = document.querySelector(".quote");
+        let buttonGoto = document.querySelectorAll(".btn-goto");
+        let downArrowEle = document.querySelector(".scroll-down");
+
+        let txtNode, index = 0, char;
+        let typeInterval = setInterval(() => {
+            if (char = caption.charAt(index)) {
+                txtNode = document.createTextNode(char);
+                captionEle.appendChild(txtNode);
+                ++index;
+            } else {
+                clearInterval(typeInterval);
+                index = 0;
+                setTimeout(() => {
+                    typeInterval = setInterval(() => {
+                        if (char = quote.charAt(index)) {
+                            txtNode = document.createTextNode(char);
+                            quoteEle.appendChild(txtNode);
+                            ++index;
+                        } else {
+                            clearInterval(typeInterval);
+                            index = 0;
+                            setTimeout(() => {
+                                let byEle = document.createElement("span");
+                                byEle.innerHTML = by;
+                                byEle.style.float = "right";
+                                quoteEle.appendChild(byEle);
+                                buttonGoto[0].style.opacity = "1";
+                                buttonGoto[1].style.opacity = "1";
+                                downArrowEle.classList.add("scroll-down-anim");
+                            }, 500);
+                        }
+                    }, (typeDelay - 50));
+                }, 1000);
+            }
+        }, typeDelay);
+    }
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            typingAnimation();
+        }, 3000);
+    })
 </script>
 
 </html>
