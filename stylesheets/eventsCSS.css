@@ -12,7 +12,10 @@ body, html {
         overflow-x: hidden;
         font-size: 1em;
         /* background-image: url('../images/eventsBackground.jpg'); */
-        background-image: url(./../images/eventBack.jpg);
+        background-image: url(./../images/abstract/triangle.jpg);
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
 }
 
 .navLogoContainer img, .navLogoContainer h6 {
@@ -24,6 +27,7 @@ body, html {
 }
 
 .navLogoContainer h6 {
+        color: black !important;
         top: 33px;
         margin-left: 1.7rem;
 }
@@ -33,7 +37,7 @@ body, html {
         width: 100%;
         height: 80%;
         border-radius: 5px;
-        box-shadow: 0 0 32px 4px #4f4f4f;
+        box-shadow: 0 0 20px 4px #4f4f4f;
         padding: 0 5px;
         position: relative;
         top: 10%;
@@ -269,4 +273,10 @@ body, html {
         background-image: url(./../images/quiz.jpeg);
         background-position: center;
         background-size: cover;  
+}
+.debate {
+        background-image: url(./../images/debate.jpeg);
+        color: white;
+        background-position: center;
+        background-size: cover; 
 }

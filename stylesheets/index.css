@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 /*Home SEction*/
 
-.sec1 { 
+.sec1 {
   background-image: url('../images/back8.jpg');
   background-position: center;
   background-size: cover;
@@ -20,6 +20,7 @@
   border-radius: 50%;
 }
 */
+
 /*logo*/
 
 /*.sec1 .main-logo {
@@ -29,6 +30,7 @@
   animation-duration: 3s;
 }
 */
+
 /* @keyframes popdown {
   0% {
     margin-top: -50rem;
@@ -61,6 +63,7 @@
   animation-duration: 3s;
 }
 */
+
 /* @keyframes blurLeft {
   0% {
     margin-top: 60rem;
@@ -69,8 +72,10 @@
   }
   100% {
     margin-top: 1rem; */
-    /* margin-bottom: 0rem; */
-    /* filter: blue(0px);
+
+/* margin-bottom: 0rem; */
+
+/* filter: blue(0px);
     opacity: 1;
   }
 } */
@@ -195,7 +200,8 @@
   top: 0;
   color: white;
   /* background: black; */
-  /*overflow: hidden;
+
+/*overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
@@ -279,6 +285,7 @@
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 */
+
 /*End of glitch*/
 
 /*Button*/
@@ -318,6 +325,12 @@
   overflow: hidden;
   position: relative;
   transition: 1s;
+}
+
+.sec2 .btn-custom {
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
 }
 
 .btn-custom span {
@@ -531,7 +544,7 @@
 /*About Section*/
 
 .sec2 {
-  background-image: url('../images/back3.jpg');
+  background-image: url('../images/abstract/paper.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -550,7 +563,7 @@
   color: #ffffff;
   padding: 9vw;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.411);
-  box-shadow: 0px 2px 2px blueviolet 0px 2px 3px palevioletred 0px 2px 5px white;
+  box-shadow: 0px 2px 2px black 0px 2px 3px white 0px 2px 5px black;
   /* background-color: #151823;  */
   background: radial-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.596), transparent, rgba(19, 17, 17, 0.705));
   animation-duration: 2s;
@@ -592,8 +605,8 @@
   -webkit-filter: blur(5vw);
   -moz-filter: blur(5vw);
   -ms-filter: blur(5vw);
-  filter: blur(2vw);
-  background: linear-gradient(270deg, rgb(216, 73, 230), #792d79, #6f09e4);
+  filter: blur(5vw);
+  background: linear-gradient(270deg, gray, black, gray);
   background-size: 100% 200%;
   animation: animateGlow 10s ease infinite;
 }
