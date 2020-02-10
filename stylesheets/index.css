@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /*Home SEction*/
 
+@font-face {
+  font-family: 'Cavier-Dreams';
+  src: url(./../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: 'Cavier-Dreams-bold';
+  src: url(./../fonts/CaviarDreams_Bold.ttf);
+}
+
 .sec1 {
-  background-image: url('../images/background.jpeg');
+  background-image: url('../images/abstract/Back8.svg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -303,6 +313,12 @@
   width: 100%;
 }
 
+.btn-home:hover {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 2px 5px rgba(0.5);
+}
+
 .btn {
   color: #fff;
   cursor: pointer;
@@ -550,11 +566,15 @@
 /*About Section*/
 
 .sec2 {
-  background-image: url('../images/abstract/poly.png');
+  background-image: url('../images/abstract/Back5.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.aboutUsHeading p{
+  font-family: 'Cavier-Dreams-bold'!important;
 }
 
 
@@ -563,18 +583,27 @@
 .exabyte {
   border-radius: 50%;
   /* line-height: 15vw; */
-  width: 30vw;
-  height: 30vw;
+  width: 15rem;
+  height: 15rem;
   text-align: center;
-  font-size: 3vw;
+  font-size: 1.9rem;
+  font-family: 'Cavier-Dreams-bold'!important;
   color: #ffffff;
-  padding: 9vw;
+  padding-top: 4rem;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.411);
   box-shadow: 0px 2px 2px black 0px 2px 3px white 0px 2px 5px black;
   /* background-color: #151823;  */
   background: radial-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.596), transparent, rgba(19, 17, 17, 0.705));
   animation-duration: 2s;
   animation-name: anime;
+}
+
+.exabyte-logo-text {
+  font-family: 'Cavier-Dreams-bold'!important;
+}
+
+* {
+  font-family: 'Montserrat';
 }
 
 /* @keyframes anime {
@@ -596,12 +625,12 @@
     }
 }  */
 
-.exabyte:after {
+/* .exabyte:after {
   position: absolute;
   content: "";
-  top: 8vw;
-  left: 0;
-  height: 20vw;
+  top: 8vw; */
+  /* left: 0; */
+  /* height: 20vw;
   border-radius: 50%;
   right: 0;
   z-index: -1;
@@ -616,7 +645,7 @@
   background: linear-gradient(270deg, gray, black, gray);
   background-size: 100% 200%;
   animation: animateGlow 10s ease infinite;
-}
+} */
 
 @keyframes animateGlow {
   0% {
@@ -636,18 +665,18 @@
 .exabyte span {
   font-size: 4vw;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
-  animation: textColor 10s ease infinite;
+  animation: textColor 2s ease infinite;
 }
 
 @keyframes textColor {
   0% {
-    color: #7e0fff;
+    color: #665f6d;
   }
   50% {
-    color: #c70fff;
+    color: #ece5ee;
   }
   100% {
-    color: #7e0fff;
+    color: #65606b;
   }
 }
 
@@ -666,7 +695,7 @@
 }
 
 .sec3 {
-  background-image: url('../images/abstract/lowpoly.png');
+  background-image: url('../images/abstract/Back4.svg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -675,6 +704,11 @@
 
 .countDownHeader {
   margin-top: 5rem;
+  font-family: 'Cavier-Dreams-bold'!important;
+}
+
+.countDownParagraph {
+  margin-top: 2rem;
 }
 
 .countDown {
@@ -737,6 +771,7 @@
 
 .eventHeader {
   margin-top: 5rem;
+  font-family: 'Cavier-Dreams-bold'!important;
 }
 
 .schedule-container {
