@@ -1,7 +1,7 @@
 
 body {
     background-color: white;
-    background-image: url('../images/back14.jpg');
+    background-image: url('../images/abstract/paper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,6 +26,8 @@ body {
 }
 
 .headerMain {
+    font-family: 'Cavier-Dreams-bold';
+    color: black!important;
     animation-name: blur;
     animation-duration: 2s;
 }
@@ -64,7 +66,7 @@ body {
     content: "";
     width: 220%;
     height: 100%;
-    background: linear-gradient(to left, rgb(48, 134, 233), transparent, rgb(65, 174, 238), rgb(99, 188, 240));
+    background: linear-gradient(to left, rgb(69, 70, 71), transparent, rgb(85, 86, 87), rgb(174, 178, 180));
     position: absolute;
     top: -100%;
     left: -15%;
@@ -73,7 +75,7 @@ body {
 }
 
 .our-team .pic:after {
-    background: linear-gradient(to left, rgb(76, 175, 233), transparent);
+    background: linear-gradient(to left, rgb(89, 91, 92), transparent);
     top: auto;
     left: auto;
     bottom: -100%;
@@ -153,8 +155,8 @@ body {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: rgb(224, 220, 220);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     margin-bottom: 7px;
     animation-name: blur;
