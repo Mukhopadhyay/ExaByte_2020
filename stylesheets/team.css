@@ -1,10 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/*Home SEction*/
+
+@font-face {
+    font-family: 'Cavier-Dreams';
+    src: url(./../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: 'Cavier-Dreams-bold';
+    src: url(./../fonts/CaviarDreams_Bold.ttf);
+}
 
 body {
+    font-family: 'Montserrat';
     background-color: white;
     background-image: url('../images/abstract/Back8.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+header .exabyte-logo {
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .exabyte-logo-text {
+    color: var( --page-font-color);
+    /* font-family: 'Sigmar One', cursive; */
+    font-size: 18px;
+    margin: 0;
+    margin-left: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+header .img-logo-sm {
+    float: left;
+    width: 50px;
 }
 
 .wrapper {
@@ -22,7 +61,7 @@ body {
 
 .navLogoHeading {
     margin-left: 5px;
-} 
+}
 
 .navLogoContainer h6 {
     top: 33px;
@@ -50,7 +89,6 @@ body {
 @keyframes showup {
     0% {
         margin-top: -50rem;
-       
     }
     100% {
         margin-top: 0;
@@ -64,7 +102,6 @@ body {
 .our-team .pic {
     /* overflow: hidden; */
     position: relative;
-    
 }
 
 .pic img {
@@ -76,20 +113,16 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     box-shadow: 0px 2px 10px rgb(121, 119, 119);
-    
 }
 
 @keyframes float {
     0% {
         transform: translateY(-2px);
         /* transform: scale(1); */
-        
     }
     50% {
         transform: translateY(0px);
-        
         /* transform: scale(0.8); */
-       
     }
     100% {
         transform: translateY(-2px);
@@ -100,7 +133,6 @@ body {
 .pic img:hover {
     transform: rotateX("360deg");
 }
-
 
 /* .our-team .pic:before, .our-team .pic:after {
     content: "";

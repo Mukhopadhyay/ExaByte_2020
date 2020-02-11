@@ -6,6 +6,32 @@
         color: #fff;
 }
 
+header .exabyte-logo {
+        position: absolute;
+        z-index: 1;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+}
+
+header .exabyte-logo-text {
+        color: black;
+        /* font-family: 'Sigmar One', cursive; */
+        font-size: 18px;
+        margin: 0;
+        margin-left: 5px;
+        display: block;
+        cursor: pointer;
+}
+
+header .img-logo-sm {
+        float: left;
+        width: 50px;
+}
+
 body, html {
         width: 100vw;
         height: 100vh;
@@ -235,48 +261,57 @@ body, html {
         background-position: center;
         background-size: cover;
 }
+
 .webbed {
         background-image: url(./../images/webbed.jpeg);
         background-position: center;
         background-size: cover;
 }
+
 .digibit {
         background-image: url(./../images/digibit.jpeg);
         background-position: center;
         background-size: cover;
 }
+
 .cryptx {
         background-image: url(./../images/cryptx.jpeg);
         background-position: center;
         background-size: cover;
 }
+
 .embleed {
         background-image: url(./../images/embleed.jpeg);
         background-position: center;
         background-size: cover;
         color: black;
 }
+
 .embleed .eventButton .btn-custom {
         color: black;
 }
+
 .crosshair {
         background-image: url(./../images/crosshair.jpeg);
         background-position: center;
         background-size: cover;
 }
+
 .cubex {
         background-image: url(./../images/cubex.jpeg);
         background-position: center;
-        background-size: cover; 
+        background-size: cover;
 }
+
 .quiz {
         background-image: url(./../images/quiz.jpeg);
         background-position: center;
-        background-size: cover;  
+        background-size: cover;
 }
+
 .debate {
         background-image: url(./../images/debate.jpeg);
         color: white;
         background-position: center;
-        background-size: cover; 
+        background-size: cover;
 }

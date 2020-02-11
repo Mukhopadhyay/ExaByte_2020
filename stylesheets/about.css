@@ -2,6 +2,32 @@ html {
     scroll-behavior: smooth;
 }
 
+header .exabyte-logo {
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .exabyte-logo-text {
+    color: var( --page-font-color);
+    /* font-family: 'Sigmar One', cursive; */
+    font-size: 18px;
+    margin: 0;
+    margin-left: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+header .img-logo-sm {
+    float: left;
+    width: 50px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -11,22 +37,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-}
-
-.navLogoContainer img, .navLogoContainer h6 {
-    width: 30px;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 99;
-}
-.navLogoContainer h6 {
-    top: 23px;
-    margin-left: 2.5rem;
-}
-
-.logoContainer {
-    margin-top: 3rem;
 }
 
 .about {
@@ -92,6 +102,7 @@ body {
 #timeline {
     margin-top: 5rem !important;
 }
+
 .timeline {
     position: relative;
     max-width: 1200px;

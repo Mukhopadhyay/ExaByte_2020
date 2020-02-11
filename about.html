@@ -23,17 +23,19 @@
     <link rel="stylesheet" href="./stylesheets/about.css">
     <script src="./scripts/about.js"></script>
 
+    
 
 </head>
 
 <body>
     <header>
-        <!-- <label class="logo"><h3>ExaByte 2020</h3></label> -->
+        <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
+                class="img-logo-sm"><label class="exabyte-logo-text">eXabyte 2020</label></div>
         <div class="animated-ham-btn">
             <button class="ham-btn-wrapper hamburger" id="hamburger">
-                <div class="ham-stroke" style="background-color: #929292;"></div>
-                <div class="ham-stroke" style="background-color: #929292;"></div>
-                <div class="ham-stroke" style="background-color: #929292;"></div>
+                <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
+                <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
+                <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
             </button>
         </div>
     </header>
@@ -48,14 +50,8 @@
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-                    <a href="#">
+                    <a href="./events.html">
                         <span class="menu-link-txt">Events</span>
-                        <span class="menu-link-line"></span>
-                    </a>
-                </li>
-                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-                    <a href="#">
-                        <span class="menu-link-txt">Registration</span>
                         <span class="menu-link-line"></span>
                     </a>
                 </li>
@@ -67,7 +63,7 @@
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
                     <a href="./team.html">
-                        <span class="menu-link-txt">Our Team</span>
+                        <span class="menu-link-txt">Our team</span>
                         <span class="menu-link-line"></span>
                     </a>
                 </li>
@@ -77,12 +73,14 @@
                         <span class="menu-link-line"></span>
                     </a>
                 </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="./about.html">
+                        <span class="menu-link-txt">About</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
             </ul>
         </div>
-    </div>
-    <div class="navLogoContainer" onclick="window.location.href='./index.html'">
-        <img src="./images/logo.png" class="navLogo">
-        <h6 class="navLogoHeading text-light">eXaByte</h6>
     </div>
     <div id="wrapper">
         <div class="container about text-center">
@@ -97,8 +95,10 @@
                 </div>
                 <h2 class="introHead">eXaByte 2020</h2>
                 <div class="introContainer">
-                    <p class="introText lead col-12 m-auto" >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti iure maiores unde exercitationem rerum suscipit harum nulla aut illum laboriosam sit ducimus aliquam atque facere aspernatur, nobis similique? Voluptas.
+                    <p class="introText lead col-12 m-auto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti iure maiores unde
+                        exercitationem rerum suscipit harum nulla aut illum laboriosam sit ducimus aliquam atque facere
+                        aspernatur, nobis similique? Voluptas.
                     </p>
                 </div>
             </div>

@@ -544,6 +544,10 @@
   margin-left: 1.7rem;
 }
 
+.exabyte-logo-text {
+  font-family: 'Cavier-Dreams-bold'!important;
+}
+
 .appreciationText {
   padding: 2rem;
 }
@@ -573,10 +577,9 @@
   background-size: cover;
 }
 
-.aboutUsHeading p{
+.aboutUsHeading p {
   font-family: 'Cavier-Dreams-bold'!important;
 }
-
 
 /**/
 
@@ -598,9 +601,7 @@
   animation-name: anime;
 }
 
-.exabyte-logo-text {
-  font-family: 'Cavier-Dreams-bold'!important;
-}
+
 
 * {
   font-family: 'Montserrat';
@@ -629,8 +630,10 @@
   position: absolute;
   content: "";
   top: 8vw; */
-  /* left: 0; */
-  /* height: 20vw;
+
+/* left: 0; */
+
+/* height: 20vw;
   border-radius: 50%;
   right: 0;
   z-index: -1;
@@ -800,10 +803,25 @@
 /*Pagepiling override*/
 
 #pp-nav {
-  display: none;
+  /* display: none; */
 }
 
 /*Social icons*/
+
+.social ul {
+  position: absolute;
+  top: 38%;
+  list-style-type: none;
+}
+
+.social ul li a {
+  font-size: 3rem;
+}
+.social ul li a:hover {
+  color: white;
+  transform: rotate(2);
+  transition-duration: .5s;
+}
 
 .social-container {
   font-size: 3rem;
