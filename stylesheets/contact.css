@@ -1,3 +1,11 @@
+body {
+    background-color: white;
+    background-image: url('../images/abstract/Back5.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	transform: rotateY("90deg");
+}
 .intro{
 	text-align: center;
 	position: relative;
@@ -31,8 +39,8 @@
 }
 .skewedBox{
 	background: #1488CC;
-	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-	background: linear-gradient(to right, #2B32B2, #1488CC); 
+	background: -webkit-linear-gradient(to right, rgb(28, 84, 129), rgb(75, 184, 246));
+	background: linear-gradient(to right, rgb(43, 124, 178), rgb(9, 70, 105)); 
 	padding: 100px 0;
 	transform: skew( 0deg, -10deg ) ;
 	margin-top: 16%;
@@ -93,7 +101,7 @@
 	text-transform: capitalize;
 }
 .btn-submit{
-	background-color: #00a1ff!important;
+	background-color: #083955!important;
 	color: white!important;
 	cursor: pointer;
 }
