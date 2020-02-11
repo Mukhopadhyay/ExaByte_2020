@@ -51,6 +51,7 @@ p {
 	margin: auto;
 }
 .containerEvent {
+	
 	width: 94.02985075%;
 	max-width: 1260px;
 	padding: 0 2.25em 4em;
@@ -63,7 +64,7 @@ p {
 .cube-container {
 	max-width: 200px;
 	text-align: center;
-	margin: 0 auto 4.5em;
+	margin:  auto ;
 }
 /* ---- Page Elements ---- */
 
@@ -116,7 +117,7 @@ p {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
 	.cube-container {
 		float: left;
 		margin-left: 16.6%;
@@ -133,7 +134,7 @@ p {
 		max-width: 900px;
 		margin: auto;
 	}
-}
+} */
 
 /* ================================= 
   Button Transitions
@@ -157,11 +158,10 @@ p {
 
 .photo-cube {
   transition: transform 2s ease-in-out; 
-  width: 220px;
+  width: 200px;
   height: 200px;
   transform-style: preserve-3d;
  
-  
 }
 
 .photo-cube1{
@@ -172,24 +172,29 @@ p {
 
 @keyframes rotate {
     0% {
-        
-        transform: rotateY(0deg) ;
+        /* transform: rotateY(0deg) ; */
+		transform: translateX(-20deg);
     }
     50% {
-        transform: rotateY(-270deg) ;
+        /* transform: rotateY(-270deg) ; */
+		transform: translateY(100deg);
     }
     100% {
-        transform: rotateY(0deg) ;
+        /* transform: rotateY(0deg) ; */
+		transform: translateX(-20deg);
     }
 }
 
 .photo-cube2{
-    /* animation-delay: 5s; */
+    animation-delay: 5s;
     animation-name: rotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-}
+} 
 
+.photo-cube:hover {
+	transform: rotateY(-270deg) ;
+}
 
 .photo-cube3{
     /* animation-delay: 10s; */
@@ -218,12 +223,12 @@ transform: translate3d(0,0,110px);
 
 .back {
 transform: translateZ(-110px) rotateY(270deg);
-  transform-origin: center left;
+transform-origin: center left;
 }
 
 .left {
 transform: rotateY(-270deg) translate3d(110px, 0, 0);
-  transform-origin: top right;
+transform-origin: top right;
 }
 
 .right {
@@ -233,15 +238,15 @@ transform: translateZ(-110px) rotateY(180deg);
     </style>
 </head>
 <body>
-    <div class="container containerEvent">
+    <div class="containerEvent">
 		<header class="main-header clearfix">
-			<img class="logo" src="http://gdurl.com/78rD">
-			<h1 class="name">3DTransform <span>Gallery</span></h1>
+			<!-- <img class="logo" src="http://gdurl.com/78rD">
+			<h1 class="name">3DTransform <span>Gallery</span></h1> -->
 		</header>
 
 		<div class="contentEvent clearfix">
 
-			<div class="cube-container">
+			<!-- <div class="cube-container">
 				<div class="photo-cube photo-cube1">
 
 					<img class="front"src="http://gdurl.com/PdNJ" alt="">
@@ -254,24 +259,24 @@ transform: translateZ(-110px) rotateY(180deg);
 					<img class="right" src="http://gdurl.com/JLdx" alt="">
 
 				</div>
-			</div>	
+			</div>	 -->
 
-			<div class="cube-container">
-				<div class="photo-cube photo-cube2">
+			<div class="cube-container row">
+				<div class="photo-cube photo-cube2 col-6 m-auto">
 
-					<img class="front" src="http://gdurl.com/oxTp" alt="">
+					<!-- <img class="front" src="http://gdurl.com/oxTp" alt=""> -->
 					<div class="back photo-desc">
 					  <h3>Space Images</h3>
 					  <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
 						<a href="#" class="button">download</a>
 					</div>
-					<img class="left" src="http://gdurl.com/A2BF" alt="">
-					<img class="right" src="http://gdurl.com/wt4v" alt="">
+					<!-- <img class="left" src="http://gdurl.com/A2BF" alt="">
+					<img class="right" src="http://gdurl.com/wt4v" alt=""> -->
 
 				</div>
 			</div>	
 
-			<div class="cube-container">
+			<!-- <div class="cube-container">
 				<div class="photo-cube photo-cube3">
 
 					<img class="front" src="http://gdurl.com/tvtR" alt="">
@@ -284,7 +289,7 @@ transform: translateZ(-110px) rotateY(180deg);
 					<img class="right" src="http://gdurl.com/VjHH" alt="">
 
 				</div>
-			</div>	
+			</div>	 -->
 
 		</div>
 	</div>
