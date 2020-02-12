@@ -475,15 +475,42 @@
   background-size: cover;
 }
 
-.aboutUsHeading p {
+.aboutUsHeading h3 {
   font-family: 'Cavier-Dreams-bold'!important;
 }
 
 /**/
 
 .exabyte {
+  /* animation-name: moving-round; */
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving-round {
+  0% {
+    transform: translateY(20px);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+    color: #65606b;
+  }
+}
+
+/* .exabyte {
   border-radius: 50%;
-  /* line-height: 15vw; */
   width: 15rem;
   height: 15rem;
   text-align: center;
@@ -493,11 +520,10 @@
   padding-top: 4rem;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.411);
   box-shadow: 0px 2px 2px black 0px 2px 3px white 0px 2px 5px black;
-  /* background-color: #151823;  */
   background: radial-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.596), transparent, rgba(19, 17, 17, 0.705));
   animation-duration: 2s;
   animation-name: anime;
-}
+} */
 
 
 
@@ -548,7 +574,7 @@
   animation: animateGlow 10s ease infinite;
 } */
 
-@keyframes animateGlow {
+/* @keyframes animateGlow {
   0% {
     background-position: 0% 50%;
     transform: rotate(0deg);
@@ -561,10 +587,10 @@
     background-position: 0% 50%;
     transform: rotate(-360deg);
   }
-}
+} */
 
 .exabyte span {
-  font-size: 4vw;
+  font-size: 3rem;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
   animation: textColor 2s ease infinite;
 }
@@ -839,16 +865,41 @@ transform: translateZ(-110px) rotateY(180deg);
 
 /*Social icons*/
 
-.social ul {
+.social li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.social a{
+  color: white;
+  padding: 1rem;
+  font-size: 2.8rem;
+  float: left;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+
+.social a i {
+  transition: 0.8s;
+}
+
+.social a i:hover {
+  transform: translateY(-10px);
+  background-image: radial-gradient("rgb(63, 62, 62)0, 66, 66),transparent");
+  
+}
+/* .social ul {
   position: absolute;
   top: 38%;
   list-style-type: none;
 }
 
 .social ul li a {
-  font-size: 3rem;
+  margin: 0.5rem;
+  font-size: 2.7rem;
+  float: left;
 }
-.social ul li a:hover {
+.fa:hover {
   color: white;
   transform: rotate(2);
   transition-duration: .5s;
@@ -878,7 +929,7 @@ transform: translateZ(-110px) rotateY(180deg);
 .icon-3d:hover {
   -webkit-animation: icon3d 200ms infinite;
   animation: icon3d 200ms infinite;
-}
+} */
 
 /*Init vals*/
 
