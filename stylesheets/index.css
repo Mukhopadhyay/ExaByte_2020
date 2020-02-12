@@ -74,8 +74,9 @@
 }
 
 #pagepiling{
-  transition: 0.4s linear opacity;
-  opacity: 0;
+  display: none;
+  /* transition: 0.4s linear opacity;
+  opacity: 0; */
 }
 .sec1 {
   background-image: url('../images/abstract/Back8.svg');
