@@ -11,6 +11,14 @@
   src: url(./../fonts/CaviarDreams_Bold.ttf);
 }
 
+#loader {
+  z-index: 999999999999;
+  background-image: url("./../images/bold-preloader.gif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .sec1 {
   background-image: url('../images/abstract/Back8.svg');
   background-position: center;

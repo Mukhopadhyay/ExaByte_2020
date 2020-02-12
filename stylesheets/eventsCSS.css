@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap');
+@font-face {
+        font-family: 'Cavier-Dreams';
+        src: url(./../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+        font-family: 'Cavier-Dreams-bold';
+        src: url(./../fonts/CaviarDreams_Bold.ttf);
+}
+
 * {
         margin: 0;
         padding: 0;
@@ -20,6 +30,7 @@ header .exabyte-logo {
 header .exabyte-logo-text {
         color: black;
         /* font-family: 'Sigmar One', cursive; */
+        font-family: 'Cavier-Dreams-bold';
         font-size: 18px;
         margin: 0;
         margin-left: 5px;
@@ -70,6 +81,7 @@ body, html {
 }
 
 .terminal * {
+        font-size: .8rem;
         font-family: "Ubuntu";
 }
 
@@ -311,6 +323,13 @@ body, html {
 
 .debate {
         background-image: url(./../images/debate.jpeg);
+        color: white;
+        background-position: center;
+        background-size: cover;
+}
+
+.robolt {
+        background-image: url(./../images/robolt.jpeg);
         color: white;
         background-position: center;
         background-size: cover;

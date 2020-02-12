@@ -50,7 +50,9 @@
 
 </head>
 
-<body>
+<body onload="loaderFunction()">
+
+    <div id="loader"></div>
 
     <header>
         <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
@@ -98,7 +100,7 @@
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
-                    <a href="./about.html">
+                    <a href="*">
                         <span class="menu-link-txt">About</span>
                         <span class="menu-link-line"></span>
                     </a>
@@ -129,19 +131,19 @@
                         </span>
                         <!--Social Icon-->
                         <div class="social">
-                           
-                                    <a href="https://www.facebook.com/exabytesxc/" target="_blank">
-                                        <i class="social-icon fa fa-facebook-official" aria-hidden="true"></i>
-                                    </a>
-                               
-                                    <a href="#">
-                                        <i class="social-icon fa fa-twitter-square" aria-hidden="true"></i>
-                                    </a>
-                                
-                                    <a href="#">
-                                        <i class="social-icon fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                               
+
+                            <a href="https://www.facebook.com/exabytesxc/" target="_blank">
+                                <i class="social-icon fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="social-icon fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="social-icon fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+
                         </div>
 
                         <!--Scroll-down-->
@@ -156,7 +158,7 @@
                         </a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <!-- About (A little about exabyte's past) -->
@@ -333,7 +335,8 @@
                         <div class="contentEvent clearfix">
                             <div class="cube-container row">
                                 <div class="photo-cube photo-cube2 col-12 m-auto">
-                                    <h3 style="font-family: 'Cavier-Dreams-bold'; transform: translateX(90deg)">eXabyte 2020</h3>
+                                    <h3 style="font-family: 'Cavier-Dreams-bold'; transform: translateX(90deg)">eXabyte
+                                        2020</h3>
 
                                     <div class="back photo-desc">
                                         <img src="images/logo.png" style="width:13rem;">
@@ -481,6 +484,16 @@
 <script src="./scripts/counterJS.js"></script>
 <script type="text/javascript">
     $(function () {
+
+        let loaderFunction = function () {
+            $('#loader').animate({
+                opacity: 0
+            }, 1000, function () {
+                console.log('loader removed!');
+                $('#loader').css('display', 'none');
+            })
+        }
+
         let a = 0;
         for (; a < 25; a += 1) {
             setTimeout(function b() {
@@ -566,18 +579,23 @@
                                 buttonGoto[0].style.opacity = "1";
                                 buttonGoto[1].style.opacity = "1";
                                 downArrowEle.classList.add("scroll-down-anim");
-                            }, 500);
+                            }, 200);
                         }
                     }, (typeDelay - 50));
-                }, 1000);
+                }, 20);
             }
         }, typeDelay);
     }
     window.addEventListener('load', () => {
         setTimeout(() => {
             typingAnimation();
-        }, 3000);
+        }, 200);
     })
+
+    let loaderFunction = function () {
+
+    }
+
 </script>
 
 </html>

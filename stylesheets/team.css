@@ -14,7 +14,7 @@
 body {
     font-family: 'Montserrat';
     background-color: white;
-    background-image: url('../images/abstract/Back8.svg');
+    background-image: url('../images/background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,6 +34,7 @@ header .exabyte-logo {
 header .exabyte-logo-text {
     color: var( --page-font-color);
     /* font-family: 'Sigmar One', cursive; */
+    font-family: 'Cavier-Dreams-bold';
     font-size: 18px;
     margin: 0;
     margin-left: 5px;
@@ -180,6 +181,7 @@ header .img-logo-sm {
 }
 
 .our-team .social {
+    display: none;
     width: 100%;
     padding: 0px;
     margin: 5px;
@@ -234,7 +236,8 @@ header .img-logo-sm {
 }
 
 .our-team .title {
-    font-size: 22px;
+    font-family: 'Montserrat';
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
@@ -271,7 +274,7 @@ header .img-logo-sm {
         margin-bottom: 30px;
     }
     .team-description .title {
-        font-size: 15px;
+        font-size: 10px;
     }
     .our-team .pic img {
         width: 7rem!important;
