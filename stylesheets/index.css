@@ -417,108 +417,6 @@
     box-shadow: 0px 2px 5px palevioletred;
 } */
 
-/*Dots*/
-
-.dots {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  animation: showlater 5s linear 1;
-}
-
-@keyframes showlater {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.dots span {
-  position: absolute;
-  border-radius: 50%;
-  /* background-image: linear-gradient(45deg, transparent,#49a7de,#49a7de,transparent); */
-  border-radius: 38% 62% 55% 45%/32% 53% 47% 68%;
-  animation: vawe 7s linear infinite;
-}
-
-.dots span:nth-child(1) {
-  top: -10%;
-  left: calc(100% - 200px);
-  width: 175px;
-  height: 175px;
-  background-image: linear-gradient(85deg, transparent, #49a7de, #49a7de, transparent);
-}
-
-.dots span:nth-child(2) {
-  top: 45px;
-  left: -80px;
-  width: 150px;
-  height: 150px;
-  border-radius: 38% 62% 33% 67% / 60% 53% 47% 40%;
-  background-image: linear-gradient(125deg, transparent, #49a7de, #49a7de, transparent);
-}
-
-.dots span:nth-child(3) {
-  right: 20px;
-  bottom: 20px;
-  width: 180px;
-  height: 180px;
-  border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
-  transform: rotate(80deg);
-  background-image: linear-gradient(30deg, transparent, #49a7de, #49a7de, transparent);
-}
-
-.dots span:nth-child(4) {
-  bottom: 150px;
-  left: 10px;
-  width: 80px;
-  height: 60px;
-  border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
-  background-image: linear-gradient(80deg, transparent, #49a7de, #49a7de, transparent);
-}
-
-.dots span:nth-child(5) {
-  right: 280px;
-  bottom: 20px;
-  width: 25px;
-  height: 25px;
-  border-radius: 38% 62% 55% 45% / 52% 53% 47% 48%;
-  background-image: linear-gradient(250deg, transparent, #49a7de, #49a7de, transparent);
-}
-
-.dots span:nth-child(6) {
-  top: 6%;
-  left: calc(100% - 400px);
-  width: 25px;
-  height: 25px;
-  background-image: linear-gradient(15deg, transparent, #49a7de, #49a7de, transparent);
-}
-
-@keyframes vawe {
-  20% {
-    /* transform: rotate(30deg); */
-    border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
-  }
-  40% {
-    /* transform: rotate(90deg); */
-    border-radius: 45% 55% 49% 51% / 36% 51% 49% 64%;
-  }
-  60% {
-    transform: translate(120deg);
-    border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
-  }
-  80% {
-    /* transform: rotate(360deg); */
-    border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
-  }
-}
 
 .introQuote {
   font-size: 13px;
@@ -786,6 +684,139 @@
   margin-top: 6rem;
 }
 
+.back {
+  transform: translateZ(-80px) ;
+  transform-origin: center;
+  }
+
+.photo-cube {
+  transition: transform 2s ease-in-out; 
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+ 
+}
+
+
+.photo-cube2{
+  /* transform: translateZ(-110px) rotateY(270deg);
+  transform-origin: center left; */
+  animation-delay: 5s;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+} 
+
+@keyframes rotate {
+  0% {
+      transform: rotateY(0deg) ;
+  
+  }
+  50% {
+      transform: rotateY(-270deg) ;
+
+  }
+  100% {
+      transform: rotateY(0deg) ;
+  
+  }
+}
+
+/* .containerEvent,
+.content {
+  margin: auto;
+  margin-top: -5rem;
+}
+.containerEvent {
+	
+	padding: 1rem;
+	background: #fff;
+}
+.main-header {
+	text-align: center;
+	padding: 2.8em 0 3.8em;
+}
+.cube-container {
+	max-width: 200px;
+	text-align: center;
+	margin:  auto ;
+
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+.photo-cube {
+  transition: transform 2s ease-in-out; 
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+ 
+}
+
+.photo-cube1{
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg) ;
+		
+    }
+    50% {
+        transform: rotateY(-270deg) ;
+	
+    }
+    100% {
+        transform: rotateY(0deg) ;
+		
+    }
+}
+
+.photo-cube2{
+    animation-delay: 5s;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} 
+
+
+.front,
+.back,
+.left,
+.right {
+width: 100%;
+height: 100%;
+display: block;
+position: absolute;
+}
+
+.front {
+transform: translate3d(0,0,110px);
+}
+
+.back {
+transform: translateZ(-110px) rotateY(270deg);
+transform-origin: center left;
+}
+
+.left {
+transform: rotateY(-270deg) ;
+transform-origin: top right;
+}
+
+.right {
+transform: translateZ(-110px) rotateY(180deg);
+ } */
+
+
+
 .sec5 {
   background-color: black;
   color: white;
@@ -800,11 +831,11 @@
   font-size: 2em;
 }
 
-/*Pagepiling override*/
+/* Pagepiling override
 
 #pp-nav {
-  /* display: none; */
-}
+  display: none;
+} */
 
 /*Social icons*/
 
