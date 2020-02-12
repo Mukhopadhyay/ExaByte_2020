@@ -53,8 +53,10 @@
 <body>
 
     <!-- <div id="loader"></div> -->
-    <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <p>eXabyte 2020</p>
     </div>
     <header>
         <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
@@ -122,7 +124,7 @@
                         <h2 class="caption"></h2>
                         <p class="quote"></p>
 
-                        <span style="margin-top: 20px;">
+                        <span style="margin-top: 5px;">
                             <a class="btn-home btn-goto" href="./events.html">
                                 <span></span>
                                 <span></span>
@@ -134,7 +136,7 @@
                         <!--Social Icon-->
                         <div class="social">
 
-                            <a href="https://www.facebook.com/exabytesxc/" target="_blank">
+                            <a href="https://www.facebook.com/exabytesxc/">
                                 <i class="social-icon fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
 
@@ -183,7 +185,7 @@
                         the
                         changing times and try to get a glimpse of what future would be like.
                     </p>
-                    <section class="buttons animation2">
+                    <!-- <section class="buttons animation2">
                         <a class="btn-home btn-goto" href="./events.html" style="color: #262323; opacity:1;">
                             <span></span>
                             <span></span>
@@ -191,7 +193,7 @@
                             <span></span>
                             Learn More
                         </a>
-                    </section>
+                    </section> -->
                     <!-- <a class="btn-home btn-goto" href="./events.html" style="color: #262323">
             <span></span>
             <span></span>
@@ -594,13 +596,27 @@
         }, typeDelay);
     }
     window.addEventListener('load', () => {
-        setTimeout(() => {
-            typingAnimation();
-        }, 200);
+        setTimeout( () => {
+            loaderFunction();
+            setTimeout(() => {
+                typingAnimation();
+                // setTimeout( () => {
+                    
+                // }, 500 );           
+            }, 1500 + 500 );
+        },1000 );
+        
+        
     })
 
-    let loaderFunction = function () {
-
+    let loaderFunction = () => {
+        // document.querySelector( "#pagepiling" ).style.transition = "0.4s linear opacity";
+        document.querySelector( ".loader" ).style.opacity = "0";
+        setTimeout( () => {
+            document.querySelector( ".loader" ).style.display = "none";
+            document.querySelector( "#pagepiling" ).style.opacity = "1";
+        }, 1500 );
+       
     }
 
 </script>
