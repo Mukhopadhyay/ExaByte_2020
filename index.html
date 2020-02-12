@@ -50,10 +50,12 @@
 
 </head>
 
-<body onload="loaderFunction()">
+<body>
 
-    <div id="loader"></div>
-
+    <!-- <div id="loader"></div> -->
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header>
         <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
                 class="img-logo-sm"><label class="exabyte-logo-text">eXabyte 2020</label></div>
@@ -483,62 +485,67 @@
 </script>
 <script src="./scripts/counterJS.js"></script>
 <script type="text/javascript">
-    $(function () {
+    $(window).on("load",function(){
 
-        let loaderFunction = function () {
-            $('#loader').animate({
-                opacity: 0
-            }, 1000, function () {
-                console.log('loader removed!');
-                $('#loader').css('display', 'none');
-            })
-        }
+    $(".loader-wrapper").fadeOut("slow");
 
-        let a = 0;
-        for (; a < 25; a += 1) {
-            setTimeout(function b() {
-                let a = Math.random() * 1e3 + 5e3,
-                    c = $("<div />", {
-                        "class": "smoke",
-                        css: {
-                            left: Math.random() * 800,
-                            backgroundSize: "contain",
-                            width: Math.random() * 800,
-                            height: Math.random() * 600
-                        }
-                    });
-                $(c).addClass("animated");
-                $(c).addClass("zoomIn");
-                $(c).addClass("rollOut");
-                $(c).appendTo("#viewport");
-                $.when($(c).animate({}, {
-                    duration: a / 4,
-                    easing: "linear",
-                    queue: false,
-                    complete: function () {
-                        $(c).animate({}, {
-                            duration: a / 3,
-                            easing: "linear",
-                            queue: false
-                        })
-                    }
-                }),
-                    $(c).animate({
-                        bottom: $("#viewport").height()
-                    }, {
-                        duration: a,
-                        easing: "linear",
-                        queue: false
-                    })).then(function () {
-                        $(c).remove();
-                        b()
-                    })
-            }, Math.random() * 3e3)
-        }
-        $(".home").keypress(function () {
-            $('.home').addClass("fadeOut");
-        });
-    }())
+    }); 
+    // $(function () {
+
+    //     let loaderFunction = function () {
+    //         $('#loader').animate({
+    //             opacity: 0
+    //         }, 1000, function () {
+    //             console.log('loader removed!');
+    //             $('#loader').css('display', 'none');
+    //         })
+    //     }
+
+    //     let a = 0;
+    //     for (; a < 25; a += 1) {
+    //         setTimeout(function b() {
+    //             let a = Math.random() * 1e3 + 5e3,
+    //                 c = $("<div />", {
+    //                     "class": "smoke",
+    //                     css: {
+    //                         left: Math.random() * 800,
+    //                         backgroundSize: "contain",
+    //                         width: Math.random() * 800,
+    //                         height: Math.random() * 600
+    //                     }
+    //                 });
+    //             $(c).addClass("animated");
+    //             $(c).addClass("zoomIn");
+    //             $(c).addClass("rollOut");
+    //             $(c).appendTo("#viewport");
+    //             $.when($(c).animate({}, {
+    //                 duration: a / 4,
+    //                 easing: "linear",
+    //                 queue: false,
+    //                 complete: function () {
+    //                     $(c).animate({}, {
+    //                         duration: a / 3,
+    //                         easing: "linear",
+    //                         queue: false
+    //                     })
+    //                 }
+    //             }),
+    //                 $(c).animate({
+    //                     bottom: $("#viewport").height()
+    //                 }, {
+    //                     duration: a,
+    //                     easing: "linear",
+    //                     queue: false
+    //                 })).then(function () {
+    //                     $(c).remove();
+    //                     b()
+    //                 })
+    //         }, Math.random() * 3e3)
+    //     }
+    //     $(".home").keypress(function () {
+    //         $('.home').addClass("fadeOut");
+    //     });
+    // }())
 
 
 

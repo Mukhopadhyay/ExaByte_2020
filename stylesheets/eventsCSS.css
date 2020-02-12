@@ -334,3 +334,10 @@ body, html {
         background-position: center;
         background-size: cover;
 }
+
+.snappit {
+        background-image: url(./../images/snappit.jpeg);
+        color: white;
+        background-position: center;
+        background-size: cover;
+}
