@@ -44,8 +44,6 @@
     <script src="./public/js/jquery-3.4.1.min.js"></script>
     <!-- Pagepiling -->
     <script src="./public/js/jquery.pagepiling.min.js"></script>
-    <!-- Tilt -->
-    <script src="./public/js/tilt.jquery.js"></script>
     <!-- Flickity -->
     <script src="./public/js/flickity.pkgd.min.js"></script>
     <!--Custom scripts-->
@@ -125,6 +123,51 @@
                 <div class="bg-overlay">
                     <div class="content-wrapper">
                         <img src="images/logo_lg.png" class="img-logo-lg">
+                        <div class='wrap'>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                            <div class='c'></div>
+                        </div>
                         <h2 class="caption"></h2>
                         <p class="quote"></p>
 
@@ -172,14 +215,12 @@
         <!-- About (A little about exabyte's past) -->
         <div class="section sec2">
             <div id="aboutWrapper" class="container text-center text-light">
-                <div class="aboutUsHeading exabyte col-6 m-auto">
-                    <h3 class="text-dark">About</h3><h3 class="text-dark"> e<span>X</span>abyte</h3>
-                    <!-- <h2 class=" col-6 m-auto">About eXabyte</h2> -->
+                <div class="js-tilt tilt" data-tilt data-tilt-scale="1.1">
+                    <img  src="images/Exabyte20BlackLogo.png"  style="width:10rem;" >
                 </div>
 
-
-
-                <div class="aboutUsParagraph ">
+                <div class="aboutUsParagraph exabyte ">
+                    <h3 class="text-dark">About e<span>X</span>abyte</h3>
                     <p class="lead leadSection2 text-dark">
                         In this current accelerating society, only one thing remains un-changeable-CHANGE.
                         We never know
@@ -235,12 +276,12 @@
                     <div class="digit-inner">
                         9
                     </div>
-                    <div class="digit-inner-lower">
+                    <div class="digit-inner-lower blink">
                         9
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                    <div class="digit-inner">
+                    <div class="digit-inner blink">
                         9
                     </div>
                     <div class="digit-inner-lower">
@@ -257,12 +298,12 @@
                     <div class="digit-inner">
                         9
                     </div>
-                    <div class="digit-inner-lower">
+                    <div class="digit-inner-lower blink">
                         9
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                    <div class="digit-inner">
+                    <div class="digit-inner blink">
                         9
                     </div>
                     <div class="digit-inner-lower">
@@ -276,7 +317,7 @@
                 </div>
                 <!--Minutes-->
                 <div class="flex-item digit">
-                    <div class="digit-inner">
+                    <div class="digit-inner blink">
                         9
                     </div>
                     <div class="digit-inner-lower">
@@ -287,7 +328,7 @@
                     <div class="digit-inner">
                         9
                     </div>
-                    <div class="digit-inner-lower">
+                    <div class="digit-inner-lower blink">
                         9
                     </div>
                 </div>
@@ -298,15 +339,15 @@
                 </div>
                 <!--Seconds-->
                 <div class="flex-item digit">
-                    <div class="digit-inner">
+                    <div class="digit-inner  blink">
                         9
                     </div>
-                    <div class="digit-inner-lower">
+                    <div class="digit-inner-lower ">
                         9
                     </div>
                 </div>
                 <div class="flex-item  digit">
-                    <div class="digit-inner">
+                    <div class="digit-inner blink">
                         9
                     </div>
                     <div class="digit-inner-lower">
@@ -459,6 +500,8 @@
         </div> -->
     </div>
 
+     <!-- Tilt -->
+     <script src="./public/js/tilt.jquery.js"></script>
 </body>
 <script src="./scripts/index.js"></script>
 <script type="text/javascript">
