@@ -11,77 +11,72 @@
   src: url(./../fonts/CaviarDreams_Bold.ttf);
 }
 
-/* #loader {
-  z-index: 999999999999;
-  background-image: url("./../images/bold-preloader.gif");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
-
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  top: 50%;
-  animation: loader 2s infinite ease;
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 1;
+  transition: 1s linear opacity;
 }
-
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
+.loader p{
+  animation-name: boom-boom;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  color: rgb(31, 34, 40);
+  font-weight: bolder;
+  font-family: 'Cavier-Dreams';
 }
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  
-  25% {
-    transform: rotate(180deg);
-  }
-  
-  50% {
-    transform: rotate(180deg);
-  }
-  
-  75% {
-    transform: rotate(360deg);
-  }
-  
-  100% {
-    transform: rotate(360deg);
+.loader span{
+  border-radius: 50%;
+  position: absolute;
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: 5px solid;
+}
+.loader span:nth-child(1){
+  width: 250px;
+  height: 250px;
+  border-color: rgb(213, 213, 213);
+  border-left-width: 0;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.loader span:nth-child(2){
+  width: 230px;
+  height: 230px;
+  border-color: rgb(55, 56, 56);
+  border-right-width: 0;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation-direction: reverse;
+}
+@keyframes rotation{
+  0%{
+    transform: rotateZ(0deg);
+  } 
+  100%{
+    transform: rotateZ(360deg);
   }
 }
-
-@keyframes loader-inner {
-  0% {
-    height: 0%;
+@keyframes boom-boom{
+  0%{
+    transform: scale(1,1);
   }
-  
-  25% {
-    height: 0%;
-  }
-  
-  50% {
-    height: 100%;
-  }
-  
-  75% {
-    height: 100%;
-  }
-  
-  100% {
-    height: 0%;
+  50%{
+    transform: scale(1.5,1.5);
   }
 }
 
+#pagepiling{
+  transition: 0.4s linear opacity;
+  opacity: 0;
+}
 .sec1 {
   background-image: url('../images/abstract/Back8.svg');
   background-position: center;
