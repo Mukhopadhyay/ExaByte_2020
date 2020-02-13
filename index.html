@@ -53,10 +53,12 @@
 <body>
 
     <!-- <div id="loader"></div> -->
-    <div class="loader">
-        <span></span>
-        <span></span>
-        <p>eXabyte 2020</p>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <p>eXabyte 2020</p>
+        </div>
     </div>
     <header>
         <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
@@ -487,11 +489,11 @@
 </script>
 <script src="./scripts/counterJS.js"></script>
 <script type="text/javascript">
-    $(window).on("load",function(){
+    // $(window).on("load",function(){
 
-    $(".loader-wrapper").fadeOut("slow");
+    // $(".loader-wrapper").fadeOut("slow");
 
-    }); 
+    // }); 
     // $(function () {
 
     //     let loaderFunction = function () {
@@ -611,10 +613,12 @@
 
     let loaderFunction = () => {
         // document.querySelector( "#pagepiling" ).style.transition = "0.4s linear opacity";
-        document.querySelector( ".loader" ).style.opacity = "0";
+        let loaderWrapper = document.querySelector( ".loader-wrapper" );
+        loaderWrapper.style.opacity = "0";
+        loaderWrapper.style.background = "rgba(0, 0, 0, 0)";
         setTimeout( () => {
-            document.querySelector( ".loader" ).style.display = "none";
-            document.querySelector( "#pagepiling" ).style.opacity = "1";
+            loaderWrapper.style.display = "none";
+            // document.querySelector( "#pagepiling" ).style.opacity = "1";
         }, 1500 );
        
     }

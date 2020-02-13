@@ -23,7 +23,7 @@ font-family: 'Sigmar One', cursive;
 	box-sizing: border-box;
 }
 *:focus{
-	outline: none;
+	outline: none !important;
 }
 body, html{
 	width: var( --page-width );
@@ -38,11 +38,11 @@ div{
 }
 button{
 	border:none;
-	cursor: pointer;
+	cursor: pointer !important;
 }
 a{
-	text-decoration: none;
-	cursor: pointer;
+	text-decoration: none !important;
+	cursor: pointer !important;
 }
 
 .page-container{
@@ -89,7 +89,7 @@ header .img-logo-sm{
 
 /** Menu style starts here */
 
-.animated-ham-btn {
+/*.animated-ham-btn {
 	position: absolute;
 	right: 30px;
 	top: 15px;
@@ -144,7 +144,7 @@ header .img-logo-sm{
 	transition: .3s ease-out transform;
 	/* font-family: 'Delius', cursive; */
 }
-.heading-toggle {
+/*.heading-toggle {
 	transform: translateY(0)
 }
 .menu-overlay ul {
@@ -175,7 +175,7 @@ header .img-logo-sm{
 	letter-spacing: 1.2px;
 	/* font-family: 'Delius', cursive; */
 }
-.menu-overlay ul li a:hover {
+/*.menu-overlay ul li a:hover {
 	color: var( --page-font-color )
 }
 .menu-link-line {
@@ -234,7 +234,7 @@ header .img-logo-sm{
 	-ms-transform: translateY(-13px) rotate(-45deg);
 	-o-transform: translateY(-13px) rotate(-45deg);
 	transform: translateY(-13px) rotate(-45deg)
-}
+}*/
 
 /** Menu style ends here */
 
@@ -273,11 +273,11 @@ https://thumbs.gfycat.com/DecimalBlandArabianwildcat-size_restricted.gif
 	flex-direction: column;
 }
 .content-wrapper .img-logo-lg{
-	width: 280px;
+	width: 250px;
 	margin-bottom: 20px;
 	transform: rotateY( -90deg );
 	animation: rotate-3d 2.5s cubic-bezier(0, -0.4, 0, 1.3) 1 forwards;
-	animation-delay: 0.5s;
+	animation-delay: 3000ms;
 	opacity: 0;
 	transition: linear 1s all;
 }
