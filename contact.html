@@ -153,8 +153,11 @@
 				method: "post",
 				body: data
 			})
-				.then(resp => resp.json())
-				.then(data => { console.log(data) })
+			.then(resp => resp.json())
+			.then(data => { 
+				console.log(data);
+				alert("Your message has been sent successfully. We will get to you soon. Thank you !");
+			})
 			return false;
 		}
 
