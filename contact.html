@@ -1,188 +1,189 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Contact Us</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
-	<link rel="stylesheet" type="text/css" href="./stylesheets/contact.css">
-	<link rel="preload" type="text/css" href="./stylesheets/contact.css">
-	<link rel="preload" type="text/css" href="./stylesheets/menu.css">
-	<link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-</head>
+	<head>
+		<title>Contact Us</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="preload" type="text/css" href="./stylesheets/contact.css" as="style">
+		<link rel="preload" type="text/css" href="./stylesheets/menu.css" as="style">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/contact.css">
+		
+		<!-- <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"> -->
+	</head>
 
-<body>
-	<header>
-		<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
-				class="img-logo-sm"><label class="exabyte-logo-text">eXabyte 2020</label></div>
-		<div class="animated-ham-btn">
-			<button class="ham-btn-wrapper hamburger" id="hamburger">
-				<div class="ham-stroke" style="background-color: gray;"></div>
-				<div class="ham-stroke" style="background-color: gray;"></div>
-				<div class="ham-stroke" style="background-color: gray;"></div>
-			</button>
-		</div>
-	</header>
-	<div class="menu-container">
-		<div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
-			<h1 class="menu-heading">Menu</h1>
-			<ul>
-				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
-					<a href="./index.html">
-						<span class="menu-link-txt">Home</span>
-						<span class="menu-link-line"></span>
-					</a>
-				</li>
-				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-					<a href="./events.html">
-						<span class="menu-link-txt">Events</span>
-						<span class="menu-link-line"></span>
-					</a>
-				</li>
-				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-					<a href="#">
-						<span class="menu-link-txt">Sponsors</span>
-						<span class="menu-link-line"></span>
-					</a>
-				</li>
-				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-					<a href="./team.html">
-						<span class="menu-link-txt">Our team</span>
-						<span class="menu-link-line"></span>
-					</a>
-				</li>
-				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
-					<a href="./contact.html">
-						<span class="menu-link-txt">Contact</span>
-						<span class="menu-link-line"></span>
-					</a>
-				</li>
-				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
-					<a href="*">
-						<span class="menu-link-txt">About</span>
-						<span class="menu-link-line"></span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<section class="intro">
-		<h1>Contact our eXabyte support team<h1>
-				<p class="introPara">
-					Our team is happy to answer your questions. Fill out the form and we’ll be in touch as soon as
-					possible.
-				</p>
-	</section>
-	<section class="skewedBox">
-		<div class="container">
-			<div class="content-wrappper">
-				<div class="content">
-					<h1>Contact us</h1>
-					<p>You directly call us at:</p><br>
-					<div class="social">
-						<table>
-							<tr>
-								<td>
-									<p>Indranil Palit</p>
-									<p>(+91) 84206 72366</p>
-								</td>
-								<!-- <td>
-										<p>Nick Jonas</p>
-										<p>(+91)0123456789</p>
-									</td> -->
-							</tr>
-							<tr>
-								<td colspan="2">
-									<p>Also, you can drop an email at:</p>
-									<p>exabyte@sxccal.edu</p>
-								</td>
-							</tr>
-
-						</table>
-						<table class="social-icons-table">
-							<tr>
-								<td><i class="fab fa-facebook"
-										onclick="window.open('https://www.facebook.com/exabytesxc/','_blank');"></i></td>
-								<td><i class="fab fa-instagram"
-										onclick="window.open('https://www.facebook.com','_blank');"></i></td>
-								<td><i class="fab fa-linkedin"
-										onclick="window.open('https://www.facebook.com','_blank');"></i></td>
-								<td><i class="fab fa-google"
-										onclick="window.open('https://www.facebook.com','_blank');"></i></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="contact-form">
-					<form class="form" onsubmit="return submitQuery( this );">
-						<h4 class="form-text">Having a Question?</h4>
-						<table>
-							<tr>
-								<td><input type="text" name="name" placeholder="Your Name..." required="required"
-										maxlength="45"></td>
-							</tr>
-							<tr>
-								<td><input type="text" name="contact" placeholder="Your Phone/Email..."
-										required="required" maxlength="45"></td>
-							</tr>
-							<tr>
-								<td><textarea placeholder="Comments..." name="query" required="required"
-										maxlength="150"></textarea></td>
-							</tr>
-							<tr>
-								<td><button class="btn-submit">Submit</button></td>
-							</tr>
-						</table>
-					</form>
-				</div>
+	<body>
+		<header>
+			<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
+					class="img-logo-sm"><label class="exabyte-logo-text" style="color: white;">eXabyte 2020</label></div>
+			<div class="animated-ham-btn">
+				<button class="ham-btn-wrapper hamburger" id="hamburger">
+					<div class="ham-stroke"></div>
+					<div class="ham-stroke"></div>
+					<div class="ham-stroke"></div>
+				</button>
+			</div>
+		</header>
+		<div class="menu-container">
+			<div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
+				<h1 class="menu-heading">Menu</h1>
+				<ul>
+					<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+						<a href="./index.html">
+							<span class="menu-link-txt">Home</span>
+							<span class="menu-link-line"></span>
+						</a>
+					</li>
+					<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+						<a href="./events.html">
+							<span class="menu-link-txt">Events</span>
+							<span class="menu-link-line"></span>
+						</a>
+					</li>
+					<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+						<a href="#">
+							<span class="menu-link-txt">Sponsors</span>
+							<span class="menu-link-line"></span>
+						</a>
+					</li>
+					<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+						<a href="./team.html">
+							<span class="menu-link-txt">Our team</span>
+							<span class="menu-link-line"></span>
+						</a>
+					</li>
+					<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+						<a href="./contact.html">
+							<span class="menu-link-txt">Contact</span>
+							<span class="menu-link-line"></span>
+						</a>
+					</li>
+					<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+						<a href="*">
+							<span class="menu-link-txt">About</span>
+							<span class="menu-link-line"></span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</section>
+		<section class="intro">
+			<h1>Contact our eXabyte support team<h1>
+					<p class="introPara">
+						Our team is happy to answer your questions. Fill out the form and we’ll be in touch as soon as
+						possible.
+					</p>
+		</section>
+		<section class="skewedBox">
+			<div class="container">
+				<div class="content-wrappper">
+					<div class="content">
+						<h1>Contact us</h1>
+						<p>You directly call us at:</p><br>
+						<div class="social">
+							<table>
+								<tr>
+									<td>
+										<p>Indranil Palit</p>
+										<p>(+91) 84206 72366</p>
+									</td>
+									<!-- <td>
+											<p>Nick Jonas</p>
+											<p>(+91)0123456789</p>
+										</td> -->
+								</tr>
+								<tr>
+									<td colspan="2">
+										<p>Also, you can drop an email at:</p>
+										<p>exabyte@sxccal.edu</p>
+									</td>
+								</tr>
 
-</body>
-<script src="https://kit.fontawesome.com/5063a19621.js" crossorigin="anonymous" async></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script type="text/javascript" defer>
-	let submitQuery = obj => {
-		const data = new FormData(obj);
-		fetch("https://formsubmit.co/ajax/exabyte@sxccal.edu", {
-			method: "post",
-			body: data
-		})
-			.then(resp => resp.json())
-			.then(data => { console.log(data) })
-		return false;
-	}
+							</table>
+							<table class="social-icons-table">
+								<tr>
+									<td><i class="fab fa-facebook"
+											onclick="window.open('https://www.facebook.com/exabytesxc/','_blank');"></i></td>
+									<td><i class="fab fa-instagram"
+											onclick="window.open('https://www.facebook.com','_blank');"></i></td>
+									<td><i class="fab fa-linkedin"
+											onclick="window.open('https://www.facebook.com','_blank');"></i></td>
+									<td><i class="fab fa-google"
+											onclick="window.open('https://www.facebook.com','_blank');"></i></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form class="form" onsubmit="return submitQuery( this );">
+							<h4 class="form-text">Having a Question?</h4>
+							<table>
+								<tr>
+									<td><input type="text" name="name" placeholder="Your Name..." required="required"
+											maxlength="45"></td>
+								</tr>
+								<tr>
+									<td><input type="text" name="contact" placeholder="Your Phone/Email..."
+											required="required" maxlength="45"></td>
+								</tr>
+								<tr>
+									<td><textarea placeholder="Comments..." name="query" required="required"
+											maxlength="150"></textarea></td>
+								</tr>
+								<tr>
+									<td><button class="btn-submit">Submit</button></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	let underlineAppear = ele => {
-		ele.children[0].children[1].style.transform = "translateX( 0% )"
-	}
-	let underlineDisappear = ele => {
-		ele.children[0].children[1].style.transform = "translateX( -150% )"
-	}
-	let toggleFlag = 1;
+	</body>
+	<script src="https://kit.fontawesome.com/5063a19621.js" crossorigin="anonymous" async></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" defer>
+		let submitQuery = obj => {
+			const data = new FormData(obj);
+			fetch("https://formsubmit.co/ajax/rahulgupta0097@gmail.com", {
+				method: "post",
+				body: data
+			})
+				.then(resp => resp.json())
+				.then(data => { console.log(data) })
+			return false;
+		}
 
-	$(document).ready(function () {
-		$(".hamburger").click(function () {
-			toggleFlag *= -1;
-			$(this).toggleClass("is-active");
-			$(".menu-overlay").toggleClass("overlay-toggle");
-			if (toggleFlag == -1) {
-				$(".menu-container").css("z-index", "10");
-				setTimeout(() => {
-					$(".menu-heading").toggleClass("heading-toggle")
-				}, 300);
-			} else {
-				$(".menu-heading").toggleClass("heading-toggle");
-				setTimeout(() => {
-					$(".menu-container").css("z-index", "-1")
-				}, 700);
-			}
+		let underlineAppear = ele => {
+			ele.children[0].children[1].style.transform = "translateX( 0% )"
+		}
+		let underlineDisappear = ele => {
+			ele.children[0].children[1].style.transform = "translateX( -150% )"
+		}
+		let toggleFlag = 1;
+
+		$(document).ready(function () {
+			$(".hamburger").click(function () {
+				toggleFlag *= -1;
+				$(this).toggleClass("is-active");
+				$(".menu-overlay").toggleClass("overlay-toggle");
+				if (toggleFlag == -1) {
+					$(".menu-container").css("z-index", "10");
+					setTimeout(() => {
+						$(".menu-heading").toggleClass("heading-toggle")
+					}, 300);
+				} else {
+					$(".menu-heading").toggleClass("heading-toggle");
+					setTimeout(() => {
+						$(".menu-container").css("z-index", "-1")
+					}, 700);
+				}
+			});
 		});
-	});
-</script>
+	</script>
 
 </html>

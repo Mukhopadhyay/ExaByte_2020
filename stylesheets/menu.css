@@ -1,10 +1,20 @@
+@font-face {
+  font-family: 'Cavier-Dreams';
+  src: url(./../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: 'Cavier-Dreams-bold';
+  src: url(./../fonts/CaviarDreams_Bold.ttf);
+}
+
 :root {
 	--font-size: 1.4em;
 	--page-width: 100vw;
 	--page-height: 100vh;
 	--page-color: #f4f4f4;
 	--primary-textcolor: white;
-	--font-family: 'Roboto', sans-serif
+	--font-family: 'Cavier-Dreams-bold', sans-serif
 }
 * {
 	margin: 0;
@@ -13,7 +23,7 @@
 	font-family: var(--font-family)
 }
 *:focus {
-	outline: 0
+	outline: 0 !important
 }
 div {
 	display: block
@@ -21,17 +31,17 @@ div {
 button {
 	border: none;
 	color: var(--primary-textcolor);
-	cursor: pointer
+	cursor: pointer !important
 }
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: var(--primary-textcolor)
 }
 body,
 html {
 	width: var(--page-width);
 	height: var(--page-height);
-	background-color: var(--page-color);
+	/*background-color: var(--page-color);*/
 	
 	overflow-x: hidden;
 }
@@ -99,6 +109,7 @@ header {
 }
 .menu-heading {
 	color: var(--primary-textcolor);
+	font-family: var(--font-family );
 	margin: 30px;
 	letter-spacing: 1.5px;
 	font-size: 35px;
@@ -123,7 +134,6 @@ header {
 	display: flex;
 	justify-content: center;
 	margin: 10px 0 10px 0;
-	overflow: hidden;
 	position: relative
 }
 .menu-overlay ul li a {

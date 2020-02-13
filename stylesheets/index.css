@@ -10,14 +10,23 @@
   font-family: 'Cavier-Dreams-bold';
   src: url(./../fonts/CaviarDreams_Bold.ttf);
 }
-
+.loader-wrapper{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background: rgba(255,255,255);
+  transition: 1s linear all;
+}
 .loader{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  opacity: 1;
-  transition: 1s linear opacity;
+  
 }
 .loader p{
   animation-name: boom-boom;
@@ -74,12 +83,9 @@
 }
 
 #pagepiling{
-  display: none;
-  /* transition: 0.4s linear opacity;
-  opacity: 0; */
+  transition: 0.4s linear opacity;
+  /*opacity: 0;*/
 }
-
-/*Section 1*/
 .sec1 {
   background-image: url('../images/abstract/Back8.svg');
   background-position: center;
@@ -664,7 +670,7 @@
 } */
 
 .exabyte span {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
   animation: textColor 2s ease infinite;
 }
