@@ -23,7 +23,7 @@
 	font-family: var(--font-family)
 }
 *:focus {
-	outline: 0 !important
+	outline: none !important
 }
 div {
 	display: block
@@ -41,8 +41,6 @@ body,
 html {
 	width: var(--page-width);
 	height: var(--page-height);
-	/*background-color: var(--page-color);*/
-	
 	overflow-x: hidden;
 }
 header {
