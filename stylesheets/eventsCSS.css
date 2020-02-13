@@ -341,3 +341,26 @@ body, html {
         background-position: center;
         background-size: cover;
 }
+
+@media screen and (max-width: 320px) {
+        .terminal * {
+                font-size: 0.67rem;
+        }
+}
+
+@media screen and (min-width: 375px) {
+        .terminal * {
+                font-size: 0.8rem;
+        }
+}
+
+.terminal {
+        background-color: #000;
+        width: 100%;
+        height: 90vh;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 4px #4f4f4f;
+        padding: 0 5px;
+        position: relative;
+        top: 10%;
+}
