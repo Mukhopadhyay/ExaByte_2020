@@ -1390,7 +1390,7 @@
 }
 
 #aboutWrapper {
-  margin-top: 9rem;
+  margin-top: 7rem;
 }
 
 .sec3 {
@@ -1692,7 +1692,7 @@ transform: translateZ(-110px) rotateY(180deg);
 }
 
 .social a i:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) rotateY(360deg);
   background-image: radial-gradient(rgb(63, 62, 62), rgb(0, 66, 66),transparent);
   
 }
