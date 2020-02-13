@@ -341,3 +341,10 @@ body, html {
         background-position: center;
         background-size: cover;
 }
+
+.pitch {
+        background-image: url(./../images/pitch.jpeg);
+        color: white;
+        background-position: center;
+        background-size: cover;
+}
