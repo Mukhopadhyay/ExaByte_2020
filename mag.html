@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Magazine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   
+  <link rel="stylesheet" href="./stylesheets/mag.css">
+  <!--MENU-->
+  <link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+</head>
+<body>
+  <header>
+		<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/Exabyte20BlackLogo.png"
+				class="img-logo-sm"><label class="exabyte-logo-text" style="font-family: 'Cavier-Dreams-bold'">eXabyte
+				2020</label></div>
+		<div class="animated-ham-btn">
+			<button class="ham-btn-wrapper hamburger" id="hamburger">
+				<div class="ham-stroke" style="background-color: gray;"></div>
+				<div class="ham-stroke" style="background-color: gray;"></div>
+				<div class="ham-stroke" style="background-color: gray;"></div>
+			</button>
+		</div>
+	</header>
+	<div class="menu-container">
+		<div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
+			<h1 class="menu-heading">Menu</h1>
+			<ul>
+				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+					<a href="./index.html">
+						<span class="menu-link-txt">Home</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+					<a href="./events.html">
+						<span class="menu-link-txt">Events</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+					<a href="./mag.html">
+						<span class="menu-link-txt">Magazines</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+					<a href="./team.html">
+						<span class="menu-link-txt">Our team</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+					<a href="./contact.html">
+						<span class="menu-link-txt">Contact</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+					<a href="*">
+						<span class="menu-link-txt">About</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+  <h1 style="text-align: center; color:rgb(224, 224, 224); margin-top: 8vh;">MAGAZINES</h1>
+    
+        <p id="magazine_text">
+            This is an age where the Cryptic Codes are interacting with both the human mind and the
+            machine. Everything is ruled by imagination. We, at the Department of Computer Science of
+            St. Xavier’s College (Autonomous), Kolkata, try to pen down the imaginations of the smartest
+            brains of the world and put up an effort to enlighten the innovations by imagining a
+            colorful, creative ideal technological future.
+        </p>
+   
+  <div class="carousel">
+    <div class="carousel-cell" data-tilt >
+     <a href="https://online.anyflip.com/fzhqq/efdo/index.html" ><img src="./images/mag/xcryptus_1.PNG"/></a>
+    </div>
+    <div class="carousel-cell" data-tilt >
+     <a href="https://online.anyflip.com/fzhqq/vgan/index.html" ><img src="./images/mag/xcryptus_2.PNG"/></a>
+    </div>
+    <div class="carousel-cell" data-tilt >
+    <a href="https://online.anyflip.com/fzhqq/vgil/index.html" ><img src="./images/mag/xcryptus_3.PNG"/></a>
+    </div>     
+  </div>
+  
+
+      <!--FLICKITY CAROUSEL JS-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <!--TILT JS-->
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+      <!--FLIPBOOK JS-->
+<script src="./public/js/anyflp-light-box-api-min.js"></script>
+<script src="./scripts/mag.js"></script>
+
+<!--FOR MENU-->
+<script type="text/javascript">
+	let underlineAppear = ele => {
+		ele.children[0].children[1].style.transform = "translateX( 0% )"
+	}
+	let underlineDisappear = ele => {
+		ele.children[0].children[1].style.transform = "translateX( -150% )"
+	}
+	let toggleFlag = 1;
+
+	$(document).ready(function () {
+		$(".hamburger").click(function () {
+			toggleFlag *= -1;
+			$(this).toggleClass("is-active");
+			$(".menu-overlay").toggleClass("overlay-toggle");
+			if (toggleFlag == -1) {
+				$(".menu-container").css("z-index", "10");
+				setTimeout(() => {
+					$(".menu-heading").toggleClass("heading-toggle")
+				}, 300);
+			} else {
+				$(".menu-heading").toggleClass("heading-toggle");
+				setTimeout(() => {
+					$(".menu-container").css("z-index", "-1")
+				}, 700);
+			}
+		});
+	});
+</script>
+
+
+</body>
+</html>
