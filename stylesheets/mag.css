@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat';
     font-weight: bolder;
     
 }
 body
 {
-    background-image: url(./../images/abstract/Back8.svg);
+    background-image: url(./../images/abstract/Back2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ header .exabyte-logo {
 }
 
 header .exabyte-logo-text {
-  color: white;
+  color: rgb(2, 2, 2);
   /* font-family: 'Sigmar One', cursive; */
   font-family: 'Cavier-Dreams-bold';
   font-size: 18px;
@@ -61,7 +61,9 @@ header .img-logo-sm {
 
 /*     Magazine    */
  
-
+.magazineHeading {
+  font-family: 'Cavier-Dreams-bold'!important;
+}
 .carousel {
     margin-top: 100px;
 }
@@ -79,8 +81,9 @@ header .img-logo-sm {
 #magazine_text{
   margin-top: 30px;
   padding: 10px 20vw;
-  color: rgb(224, 224, 224);
+  color: rgb(0, 0, 0);
   text-align: justify;
+  font-family: 'Montserrat';
 }
 
 
