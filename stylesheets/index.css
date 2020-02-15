@@ -1651,9 +1651,19 @@ transform: translateZ(-110px) rotateY(180deg);
 
 
 
+/*Section 5*/
 .sec5 {
-  background-color: black;
+  background-image: url('../images/abstract/Back7.svg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
+}
+
+.magazineHeading {
+  color: black;
+  text-shadow: 0px 5px 10px white;
+  font-family: 'Cavier-Dreams-bold';
 }
 
 .sec6 {
@@ -1780,8 +1790,8 @@ transform: translateZ(-110px) rotateY(180deg);
 
 /*Magazine*/
 
-#magazineWrapper {
-  margin-top: 5rem;
+.magazineWrapper {
+  margin-top: 10rem;
 }
 
 .magazines {
