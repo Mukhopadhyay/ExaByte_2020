@@ -15,6 +15,13 @@
 	</head>
 
 	<body>
+		<div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <p>eXabyte 2020</p>
+        </div>
+    </div>
 		<header>
 			<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
 					class="img-logo-sm"><label class="exabyte-logo-text" style="color: white;">eXabyte 2020</label></div>
@@ -187,6 +194,30 @@
 				}
 			});
 		});
+
+
+
+
+
+
+
+		window.addEventListener('load', () => {
+        setTimeout( () => {
+            loaderFunction();
+        },1000 );
+  		 })
+
+    let loaderFunction = () => {
+        
+        let loaderWrapper = document.querySelector( ".loader-wrapper" );
+        loaderWrapper.style.opacity = "0";
+        loaderWrapper.style.background = "rgba(0, 0, 0, 0)";
+        setTimeout( () => {
+            loaderWrapper.style.display = "none";
+           
+        }, 1500 );
+       
+    }
 	</script>
 
 </html>

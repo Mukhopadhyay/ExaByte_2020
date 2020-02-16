@@ -10,6 +10,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!--  Menu -->
+	<link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -25,12 +27,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./stylesheets/eventsCSS.css">
 
-	<!--  Menu -->
-	<link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+	
 
 </head>
 
 <body onload="startAnimation()">
+	<div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <p>eXabyte 2020</p>
+        </div>
+    </div>
 	<header>
 		<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/Exabyte20BlackLogo.png"
 				class="img-logo-sm"><label class="exabyte-logo-text" style="font-family: 'Cavier-Dreams-bold'">eXabyte
@@ -78,7 +86,7 @@
 					</a>
 				</li>
 				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
-					<a href="*">
+					<a href="#">
 						<span class="menu-link-txt">About</span>
 						<span class="menu-link-line"></span>
 					</a>
@@ -312,6 +320,25 @@
 			}
 		});
 	});
+
+	window.addEventListener('load', () => {
+        setTimeout( () => {
+            loaderFunction();
+        },1000 );
+   })
+
+    let loaderFunction = () => {
+        
+        let loaderWrapper = document.querySelector( ".loader-wrapper" );
+        loaderWrapper.style.opacity = "0";
+        loaderWrapper.style.background = "rgba(0, 0, 0, 0)";
+        setTimeout( () => {
+            loaderWrapper.style.display = "none";
+           
+        }, 1500 );
+       
+    }
+
 </script>
 
 </html>

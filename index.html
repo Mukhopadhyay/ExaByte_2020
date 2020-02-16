@@ -33,12 +33,6 @@
     <!--Animate-->
     <link rel="stylesheet" type="text/css" href="./public/css/animate.css">
 
-    <!-- Roboto Font -->
-    <!-- <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"> -->
-    <!-- <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Roboto|Amaranth|Delius|Sigmar+One&display=swap"> -->
-
     <!-- Script -->
     <!-- JQuery -->
     <script src="./public/js/jquery-3.4.1.min.js"></script>
@@ -107,7 +101,7 @@
                     </a>
                 </li>
                 <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
-                    <a href="*">
+                    <a href="#">
                         <span class="menu-link-txt">About</span>
                         <span class="menu-link-line"></span>
                     </a>
@@ -199,7 +193,7 @@
                         </div>
 
                         <!--Scroll-down-->
-                        <a class="scroll-down">
+                        <a class="scroll-down" style="margin-top: -5px;">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down"
                                 class="svg-inline--fa fa-angle-double-down fa-w-10" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -223,7 +217,7 @@
                 <div class="aboutUsParagraph exabyte ">
                     <h3 class="text-dark">About e<span>X</span>abyte</h3>
                     <p class="lead leadSection2 text-dark">
-                        In this current accelerating society, only one thing remains un-changeable-CHANGE.
+                        In this current accelerating society, only one thing remains un-changeable - CHANGE.
                         We never know
                         what
                         technology tomorrow will gift us. Hence in this changing world, we affirm to align ourselves
@@ -231,23 +225,8 @@
                         the
                         changing times and try to get a glimpse of what future would be like.
                     </p>
-                    <!-- <section class="buttons animation2">
-                        <a class="btn-home btn-goto" href="./events.html" style="color: #262323; opacity:1;">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Learn More
-                        </a>
-                    </section> -->
-                    <!-- <a class="btn-home btn-goto" href="./events.html" style="color: #262323">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Events
-            </a> -->
-                    <a class="scroll-down scroll-down-anim" style="display: inline-block;">
+                   
+                    <a class="scroll-down scroll-down-anim" style="display: inline-block;margin-top: -10px">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-down"
                             class="svg-inline--fa fa-angle-double-down fa-w-10" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
@@ -521,67 +500,6 @@
 </script>
 <script src="./scripts/counterJS.js"></script>
 <script type="text/javascript">
-    // $(window).on("load",function(){
-
-    // $(".loader-wrapper").fadeOut("slow");
-
-    // }); 
-    // $(function () {
-
-    //     let loaderFunction = function () {
-    //         $('#loader').animate({
-    //             opacity: 0
-    //         }, 1000, function () {
-    //             console.log('loader removed!');
-    //             $('#loader').css('display', 'none');
-    //         })
-    //     }
-
-    //     let a = 0;
-    //     for (; a < 25; a += 1) {
-    //         setTimeout(function b() {
-    //             let a = Math.random() * 1e3 + 5e3,
-    //                 c = $("<div />", {
-    //                     "class": "smoke",
-    //                     css: {
-    //                         left: Math.random() * 800,
-    //                         backgroundSize: "contain",
-    //                         width: Math.random() * 800,
-    //                         height: Math.random() * 600
-    //                     }
-    //                 });
-    //             $(c).addClass("animated");
-    //             $(c).addClass("zoomIn");
-    //             $(c).addClass("rollOut");
-    //             $(c).appendTo("#viewport");
-    //             $.when($(c).animate({}, {
-    //                 duration: a / 4,
-    //                 easing: "linear",
-    //                 queue: false,
-    //                 complete: function () {
-    //                     $(c).animate({}, {
-    //                         duration: a / 3,
-    //                         easing: "linear",
-    //                         queue: false
-    //                     })
-    //                 }
-    //             }),
-    //                 $(c).animate({
-    //                     bottom: $("#viewport").height()
-    //                 }, {
-    //                     duration: a,
-    //                     easing: "linear",
-    //                     queue: false
-    //                 })).then(function () {
-    //                     $(c).remove();
-    //                     b()
-    //                 })
-    //         }, Math.random() * 3e3)
-    //     }
-    //     $(".home").keypress(function () {
-    //         $('.home').addClass("fadeOut");
-    //     });
-    // }())
 
 
 
@@ -634,9 +552,7 @@
             loaderFunction();
             setTimeout(() => {
                 typingAnimation();
-                // setTimeout( () => {
-                    
-                // }, 500 );           
+                      
             }, 1500 + 500 );
         },1000 );
         
@@ -644,13 +560,13 @@
     })
 
     let loaderFunction = () => {
-        // document.querySelector( "#pagepiling" ).style.transition = "0.4s linear opacity";
+        
         let loaderWrapper = document.querySelector( ".loader-wrapper" );
         loaderWrapper.style.opacity = "0";
         loaderWrapper.style.background = "rgba(0, 0, 0, 0)";
         setTimeout( () => {
             loaderWrapper.style.display = "none";
-            // document.querySelector( "#pagepiling" ).style.opacity = "1";
+           
         }, 1500 );
        
     }
