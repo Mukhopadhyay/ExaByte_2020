@@ -5,17 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
   <!-- Flickity -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+   <!--MENU-->
+  <link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+
+  	<link rel="preload" href="./fonts/CavierDreams.ttf" as="ttf">
+ 	<link rel="preload" href="./fonts/CavierDreams_Bold.ttf" as="ttf">
    
   <link rel="stylesheet" href="./stylesheets/mag.css">
-  <!--MENU-->
-  <link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+ 
   <!--JQUERY-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    
 </head>
 <body>
+	<div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <p>eXabyte 2020</p>
+        </div>
+    </div>
   <header>
 		<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/Exabyte20BlackLogo.png"
 				class="img-logo-sm"><label class="exabyte-logo-text" style="font-family: 'Cavier-Dreams-bold'">eXabyte
@@ -63,7 +78,7 @@
 					</a>
 				</li>
 				<li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
-					<a href="*">
+					<a href="#">
 						<span class="menu-link-txt">About</span>
 						<span class="menu-link-line"></span>
 					</a>
@@ -72,7 +87,7 @@
 		</div>
 	</div>
 
-  <h1 style="text-align: center; color:rgb(0, 0, 0); margin-top: 8vh;">Magazines</h1>
+  <h1 style="text-align: center; color:rgb(66, 102, 169); margin-top: 5vh;">Magazines</h1>
     
         <p id="magazine_text">
             This is an age where the Cryptic Codes are interacting with both the human mind and the
@@ -82,26 +97,51 @@
             colorful, creative ideal technological future.
         </p>
    
-  <div class="carousel">
-    <div class="carousel-cell" data-tilt >
-     <a href="https://online.anyflip.com/fzhqq/efdo/index.html" ><img src="./images/mag/xcryptus_1.PNG"/></a>
-    </div>
-    <div class="carousel-cell" data-tilt >
-     <a href="https://online.anyflip.com/fzhqq/vgan/index.html" ><img src="./images/mag/xcryptus_2.PNG"/></a>
-    </div>
-    <div class="carousel-cell" data-tilt >
-    <a href="https://online.anyflip.com/fzhqq/vgil/index.html" ><img src="./images/mag/xcryptus_3.PNG"/></a>
-    </div>     
-  </div>
-  
 
-      <!--FLICKITY CAROUSEL JS-->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-      <!--TILT JS-->
+  <div class="swiper-container">
+  	<div class="swiper-wrapper">
+  		<div class="swiper-slide">
+  			<a href="https://online.anyflip.com/fzhqq/efdo/index.html"><img src="./images/mag/xcryptus_1.PNG" data-tilt></a>
+  		</div>
+  		<div class="swiper-slide">
+  			<a href="https://online.anyflip.com/fzhqq/vgan/index.html"><img src="./images/mag/xcryptus_2.PNG" data-tilt></a>
+  		</div>
+  		<div class="swiper-slide">
+  			<a href="https://online.anyflip.com/fzhqq/vgil/index.html"><img src="./images/mag/xcryptus_3.PNG" data-tilt></a>
+  		</div>
+  	</div>
+  	<div class="swiper-pagination"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+    swiper.slideTo(1, false,false);
+  </script>
+
+      
+      <!-- TILT JS -->
 <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
       <!--FLIPBOOK JS-->
 <script src="./public/js/anyflp-light-box-api-min.js"></script>
-<script src="./scripts/mag.js"></script>
+
 
 <!--FOR MENU-->
 <script type="text/javascript">
@@ -131,6 +171,24 @@
 			}
 		});
 	});
+
+	window.addEventListener('load', () => {
+        setTimeout( () => {
+            loaderFunction();
+        },1000 );
+  		 })
+
+    let loaderFunction = () => {
+        
+        let loaderWrapper = document.querySelector( ".loader-wrapper" );
+        loaderWrapper.style.opacity = "0";
+        loaderWrapper.style.background = "rgba(0, 0, 0, 0)";
+        setTimeout( () => {
+            loaderWrapper.style.display = "none";
+           
+        }, 1500 );
+       
+    }
 </script>
 
 

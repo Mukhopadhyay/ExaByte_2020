@@ -548,18 +548,24 @@ https://thumbs.gfycat.com/DecimalBlandArabianwildcat-size_restricted.gif
 
 @media( max-width: 540px ){
 	.content-wrapper .img-logo-lg{
-		width: 260px;
+		width: 230px;
 	}
 	.content-wrapper .caption{
-		font-size: 22px;
+		font-size: 20px;
 	}
 	.content-wrapper .quote{
 		width: 80%;
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.content-wrapper .btn-goto{
 		padding: 12px 25px;
 		font-size: 12px; 
+	}
+	.content-wrapper .social a{
+
+		padding: .4rem 1rem;
+		font-size: 2.1rem;
+		
 	}
 }
 
@@ -567,5 +573,7 @@ https://thumbs.gfycat.com/DecimalBlandArabianwildcat-size_restricted.gif
 /** Responsive style for home page ends here */
 
 /** Home page styles end here */
+
+
 
 
