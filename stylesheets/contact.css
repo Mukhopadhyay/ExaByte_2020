@@ -11,12 +11,12 @@ body {
 header{
 	width: 100vw;
 	height: 80px;
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	z-index: 100;
-	background: #2d5a89;
-	box-shadow: 0 10px 10px 1px #07111c40;
+	/*background: #2d5a89;
+	box-shadow: 0 10px 10px 1px #07111c40;*/
 }
 header .exabyte-logo {
 	position: absolute;
@@ -47,7 +47,7 @@ header .img-logo-sm {
 .intro {
 	text-align: center;
 	position: relative;
-	top: 20%;
+	top: 15%;
 	padding: 0 5%;
 	color: white;
 }
