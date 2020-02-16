@@ -1,12 +1,23 @@
 body {
 	background-color: white;
-	background-image: url('../images/abstract/Back5.svg');
+	background-image: linear-gradient(#1b26387d, #354963ad),
+  url(../images/coding2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	transform: rotateY("90deg");
 }
 
+header{
+	width: 100vw;
+	height: 80px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	/*background: #2d5a89;
+	box-shadow: 0 10px 10px 1px #07111c40;*/
+}
 header .exabyte-logo {
 	position: absolute;
 	z-index: 1;
@@ -36,9 +47,9 @@ header .img-logo-sm {
 .intro {
 	text-align: center;
 	position: relative;
-	top: 10%;
+	top: 15%;
 	padding: 0 5%;
-	color: #444;
+	color: white;
 }
 
 .intro h1 {
@@ -64,7 +75,7 @@ header .img-logo-sm {
 	letter-spacing: 1.5px;
 	margin-top: 3rem;
 	padding: 0 10%;
-	color: #666;
+	/*color: #666;*/
 }
 
 .skewedBox {
@@ -73,7 +84,7 @@ header .img-logo-sm {
 	background: linear-gradient(to right, rgb(43, 124, 178), rgb(9, 70, 105));
 	padding: 100px 0;
 	transform: skew( 0deg, -10deg);
-	margin-top: 16%;
+	margin-top: 25%;
 }
 
 .container {
@@ -101,7 +112,7 @@ header .img-logo-sm {
 .content {
 	width: 50%;
 	margin: 0 0 0 5%;
-	margin-top: -20%;
+	margin-top: -10%;
 }
 
 .contact-form {
@@ -110,7 +121,7 @@ header .img-logo-sm {
 	padding: 50px;
 	border-radius: 10px;
 	margin: 0 5%;
-	margin-top: -20%;
+	margin-top: -22%;
 	box-shadow: 0 0 30px 1px rgba(7, 12, 76, 0.27058823529411763);
 }
 
@@ -205,7 +216,7 @@ header .img-logo-sm {
 		font-size: 17px;
 	}
 	.skewedBox {
-		margin-top: 40%;
+		margin-top: 55%;
 	}
 	.contact-form {
 		margin-top: -65%;
@@ -222,6 +233,6 @@ header .img-logo-sm {
 
 @media( max-width: 450px) {
 	.contact-form {
-		margin-top: -85%;
+		margin-top: -80%;
 	}
 }
