@@ -1,0 +1,186 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/*Home SEction*/
+
+@font-face {
+  font-family: 'Cavier-Dreams';
+  src: url(./../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: 'Cavier-Dreams-bold';
+  src: url(./../fonts/CaviarDreams_Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* color: rgb(0, 0, 0);*/
+    font-family: 'Cavier-Dreams-bold';
+    font-weight: bolder;
+    
+}
+body
+{
+  background-image: url(./../images/abstract/Back2.svg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3686274509803922), rgba(0, 0, 0, 0.5490196078431373)),url(./../images/abstract/Back2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header{
+  width: 100vw;
+  height: 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /*background: #2d5a89;
+  box-shadow: 0 10px 10px 1px #07111c40;*/
+}
+
+/* Exabyte Logo */
+header .exabyte-logo {
+  position: absolute;
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .exabyte-logo-text {
+  color: rgb(2, 2, 2);
+  /* font-family: 'Sigmar One', cursive; */
+  font-family: 'Cavier-Dreams-bold';
+  font-size: 18px;
+  margin: 0;
+  margin-left: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+header .img-logo-sm {
+  float: left;
+  width: 50px;
+}
+.navLogoContainer img, .navLogoContainer h6 {
+  width: 30px;
+  position: fixed;
+  top: 25px;
+  left: 30px;
+  z-index: 99;
+}
+
+.navLogoContainer h6 {
+  color: black !important;
+  top: 33px;
+  margin-left: 1.7rem;
+}
+
+
+/*     Magazine    */
+ 
+.magazineHeading {
+  font-family: 'Cavier-Dreams-bold'!important;
+}
+/*.carousel {
+    margin-top: 70px;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}*/
+
+.swiper-container {
+  width: 80%;
+  height: 100%;
+  padding-bottom: 80px;
+  margin-top: 50px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.6);
+
+  width: 50%;
+  height: 100%;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide a {
+  width: 60%;
+  height: 90%;
+}
+.swiper-slide a img{
+  width: 100%;
+  height: 100%;
+}
+
+#magazine_text{
+  margin-top: 10px;
+  padding: 10px 12vw;
+  color: rgb(69, 67, 67);
+  text-align: justify;
+  font-family: 'Montserrat';
+  line-height: 22px;
+}
+
+
+@media( max-width: 1024px ){
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide{
+    height: 90%;
+  }
+  .swiper-slide a{
+    width: 70%;
+  }
+}
+
+@media( max-width: 600px ){
+  .swiper-container{
+    /*padding-bottom: 10px;*/
+    padding-bottom: 0;
+    height: 75%;
+    margin-top: 20px;
+  }
+  .swiper-slide{
+    width: 75%;
+    /*height: 80%;*/
+  }
+  .swiper-slide a{
+    width: 80%;
+  }
+  #magazine_text {
+    line-height: 18px;
+    font-size: 14px;
+    /*color: rgba(9, 19, 64, 0.9490196078431372);*/
+  }
+}
