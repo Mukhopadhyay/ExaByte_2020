@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eXabyte 2020 | About Us</title>
+
+    <link rel="preload" type="text/css" href="./stylesheets/menu.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/animate.css">
+
+    <script src="./public/js/jquery-3.4.1.min.js"></script>
+    <script src="./public/js/tilt.jquery.js"></script>
+    <script src="./public/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/gsap.min.js"></script>
+    <script src="./public/js/TweenMax.min.js"></script>
+
+    <!--Custom-->
+    <link rel="stylesheet" href="./stylesheets/about.css">
+    <script src="./scripts/about.js"></script>
+
+    
+
+</head>
+
+<body>
+    <header>
+        <div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/logo_lg.png"
+                class="img-logo-sm"><label class="exabyte-logo-text">eXabyte 2020</label></div>
+        <div class="animated-ham-btn">
+            <button class="ham-btn-wrapper hamburger" id="hamburger">
+                <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
+                <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
+                <div class="ham-stroke" style="background-color: rgba(238, 241, 242, 0.8196078431372549);"></div>
+            </button>
+        </div>
+    </header>
+    <div class="menu-container">
+        <div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
+            <h1 class="menu-heading">Menu</h1>
+            <ul>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="./index.html">
+                        <span class="menu-link-txt">Home</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./events.html">
+                        <span class="menu-link-txt">Events</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+					<a href="./mag.html">
+						<span class="menu-link-txt">Magazines</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./team.html">
+                        <span class="menu-link-txt">Our team</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./sponsors.html">
+                        <span class="menu-link-txt">Our Sponsors</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./contact.html">
+                        <span class="menu-link-txt">Contact</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <!-- <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="#">
+                        <span class="menu-link-txt">About</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="container about text-center">
+            <div class="heading">
+                <div class="logoContainer">
+                    <div class="desktopLogo" data-tilt>
+                        <img src="./images/logo.png" alt="eXabyte 2020 logo">
+                    </div>
+                    <div class="mobileLogo">
+                        <img src="./images/logo.png" alt="eXabyte 2020 logo">
+                    </div>
+                </div>
+                <h2 class="introHead">eXaByte 2020</h2>
+                <div class="introContainer">
+                    <p class="introText lead col-12 m-auto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti iure maiores unde
+                        exercitationem rerum suscipit harum nulla aut illum laboriosam sit ducimus aliquam atque facere
+                        aspernatur, nobis similique? Voluptas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid sectionEvent">
+        <div class="eventTexts text-center">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti vitae labore, harum
+                magnam
+                ipsa ex quos ullam, alias necessitatibus provident laudantium. Repellat accusamus modi
+                temporibus obcaecati quidem ad nesciunt maxime!
+            </p>
+            <button class="btn btn-outline-secondary" onclick="window.location.href='./events.html'">Events</button>
+        </div>
+    </div>
+    <div class="timeline" id="timeline">
+        <div class="timeline-container left">
+            <div class="content text-dark">
+                <h5>2019</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ipsum id commodi dolor!</p>
+            </div>
+        </div>
+        <div class="timeline-container right">
+            <div class="content text-dark">
+                <h5>2019</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ipsum id commodi dolor!</p>
+            </div>
+        </div>
+        <div class="timeline-container left">
+            <div class="content text-dark">
+                <h5>2019</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ipsum id commodi dolor!</p>
+            </div>
+        </div>
+        <div class="timeline-container right">
+            <div class="content text-dark">
+                <h5>2019</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ipsum id commodi dolor!</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="particles-js"></div> -->
+    <!-- <script src="./public/js/particles.min.js"></script>
+    <script src="./public/js/app.js"></script> -->
+    <script src="https://kit.fontawesome.com/5063a19621.js" crossorigin="anonymous" async></script>
+</body>
+
+</html>

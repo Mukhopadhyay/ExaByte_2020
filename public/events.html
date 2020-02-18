@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>eXabyte 2020 | Events</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="preload" as="style">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!--  Menu -->
+	<link rel="stylesheet" type="text/css" href="./stylesheets/menu.css">
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./stylesheets/eventsCSS.css">
+
+	
+
+</head>
+
+<body onload="startAnimation()">
+	<div class="loader-wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <p>eXabyte 2020</p>
+        </div>
+    </div>
+	<header>
+		<div class="exabyte-logo" onclick="window.open( 'index.html', '_self' );"><img src="images/Exabyte20BlackLogo.png"
+				class="img-logo-sm"><label class="exabyte-logo-text" style="font-family: 'Cavier-Dreams-bold'">eXabyte
+				2020</label></div>
+		<div class="animated-ham-btn">
+			<button class="ham-btn-wrapper hamburger" id="hamburger">
+				<div class="ham-stroke" style="background-color: gray;"></div>
+				<div class="ham-stroke" style="background-color: gray;"></div>
+				<div class="ham-stroke" style="background-color: gray;"></div>
+			</button>
+		</div>
+	</header>
+	<div class="menu-container">
+        <div class="menu-overlay" style="background-color: rgba(0, 0, 0, 0.91);">
+            <h1 class="menu-heading">Menu</h1>
+            <ul>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="./index.html">
+                        <span class="menu-link-txt">Home</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./events.html">
+                        <span class="menu-link-txt">Events</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+					<a href="./mag.html">
+						<span class="menu-link-txt">Magazines</span>
+						<span class="menu-link-line"></span>
+					</a>
+				</li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./team.html">
+                        <span class="menu-link-txt">Our team</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./sponsors.html">
+                        <span class="menu-link-txt">Our Sponsors</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );">
+                    <a href="./contact.html">
+                        <span class="menu-link-txt">Contact</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li>
+                <!-- <li onmouseover="underlineAppear( this );" onmouseout="underlineDisappear( this );" class="active-menu">
+                    <a href="#">
+                        <span class="menu-link-txt">About</span>
+                        <span class="menu-link-line"></span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+	<section class="container" style="height: 100vh;">
+		<div class="terminal">
+			<div class="tool-bar">
+				<span class="dummy-btn" style="background-color: rgb(245, 96, 96);"></span><span class="dummy-btn"
+					style="background-color: rgb(251, 251, 118);"></span><span class="dummy-btn"
+					style="background-color: rgb(126, 247, 126);"></span>
+				Terminal
+			</div>
+			<p class="thisP"><span class="term-addr">events@eXabyte2020</span>:~ $</p>
+		</div>
+	</section>
+	<div class="container eventsContainer">
+		<div class="row justify-content-end">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in codeplay">
+					<h1>CODEPLAY</h1>
+					<H6>(CODING AND DEBUGGING)</H6>
+					<p>IF YOU SEE EVERYTHING IN LIFE AS A
+						STEP BY STEP UNFOLDING OF A CONCEPT,
+						AND IF YOU ARE ADEPT IN TRANSLATING
+						YOUR SOLUTIONS INTO VARIOUS PROGRAMMING LANGUAGES, THEN CODE PLAY IS YOUR
+						GAME. COME WITH US DECRYPTING CODES AND
+						SOLVING MIND GAMES.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/TXYbTMVsAAensbTG7" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in webbed">
+					<h1>WEBBED</h1>
+					<H6>(WEBPAGE DESIGNING)</H6>
+					<p>ARE YOU A TECH-SAVVY SOUL THAT CAN INTEGRATE
+						ARTISTIC IDEA WITH PROGRAMMING TECHNIQUES?
+						PARTICIPATE IN A WEB-DESIGNING EVENT, TO EXPLORE
+						YOUR ARTISTIC EYE THROUGH THE EYE OF MACHINE.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/jbFVmJsVm7sXLgEh6" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-md-6">
+				<div class="mt-5 eachEvent slide-in digibit">
+					<h1>DIGIBIT</h1>
+					<H6>(DIGITAL ELECTRONICS)</H6>
+					<p>INTERESTED IN IMPLEMENTING YOUR IDEAS AND CONCEPTS WITH YOUR BARE HANDS? COME PARTICIPATE IN
+						DIGIBIT, WHERE WE PROVIDE THE ELEMENTS AND YOU
+						PROVIDE THE BRAIN.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/MS6Vndjv3Jw7m9PJ9" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in cryptx">
+					<h1>CRYPT-X</h1>
+					<H6>(CRYPTOGRAPHY)</H6>
+					<p>IF YOU FIND YOURSELF INTRIGUED BY
+						THE CONCEPT OF SECRET, MESSAGES AND
+						THE ABILITY TO BREAK THEM INTO PLAIN
+						TEXT, THEN CRYPT-X, OUR CRYPTOGRAPHY
+						EVENT, IS TAILOR-MADE TO SUIT YOUR CURIOSITY.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/QQc9a7PnegeRHAsU7" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-md-6">
+				<div class="mt-5 eachEvent slide-in embleed">
+					<h1>EM-BLEED</h1>
+					<H6>(LOGO DESIGNING)</H6>
+					<p>ALWAYS FOUND YOURSELF FASCINATED WITH A LARGER
+						THAN LIFE POSTER? NOW YOU HAVE A CHANCE TO
+						CREATE ONE OF YOUR OWN. WE PROVIDE THE STAGE FOR
+						YOU TO SHOWCASE YOUR ARTISTIC TALENT AND INNOVATIVE MIND.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/utqzLfQmmYPCEhdY8" class="btn btn-custom text-dark"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in crosshair">
+					<h1>BOX-TO-BOX</h1>
+					<H6>(GAMING)</H6>
+					<p>WE ARE BRINGING YOU TO JOY OF DUELS, FIGHTS AND
+						GAMING THROUGH CROSSHAIR. PLAY WITH TEAM OF
+						VARIOUS COLLEGES AND PROVE YOUR WORTH AND
+						VALOUR.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/6jdhFtbH6Dkd4JmH6" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-md-6">
+				<div class="mt-5 eachEvent slide-in cubex">
+					<h1>CUBEX</h1>
+					<H6>(RUBIK’S CUBE)</H6>
+					<p>TO OBTAIN THAT ONE PRIZED STATE OF
+						THE RUBIK'S CUBE AMONG 43 QUINTILLION
+						OTHER POSSIBLE COMBINATIONS IS THE
+						ULTIMATE JOY OF SPEEDCUBING. THIS EVENT
+						BRINGS TO YOU THE THRILL OF SPEEDCUBING
+						AND A PLATFORM TO SHOWCASE YOUR CUBING
+						SKILLS. BATTLE IT OUT AGAINST OTHER CUBERS
+						WITH YOUR ZEST AND INTELLIGENCE!</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/QZmZMRHR5Cd1Bv866" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in quiz">
+					<h1>BRAINSTORM</h1>
+					<H6>(QUIZ)</H6>
+					<p>FROM THE HOW TO WHY, FROM THE WHOM TO WHERE,
+						FROM THE WHAT TO THE WHEN, WE AIM TO FUEL YOUR
+						WIT, CURIOSITY AND QUICKNESS OF THOUGHT THROUGH
+						OUR QUIZ SESSION NAMED BRAINSTORM.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/d6cn2C5axMZGJRip8" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-md-6">
+				<div class="mt-5 eachEvent slide-in debate">
+					<h1>VERB-O-WAR</h1>
+					<H6>(DEBATE)</H6>
+					<p>WE PROVIDE THE STAGE WHILE YOU PROVIDE THE VOICE.
+						VERB-O-WAR IS THE PLACE TO BATTLE OUT YOUR IDEAS
+						AND CONCEPTS, AND ENFORCE THE WIDE SPECTRUM OF
+						THOUGHT.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/NHN7kHBq5pzKUn9L6" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in robolt">
+					<h1>ROBOLT</h1>
+					<H6>(ROBOTICS)</H6>
+					<p style="text-transform: uppercase;">If you thought that robotics couldn’t get any cooler think again, participate in our robotic race
+						and discover the athlete living underneath your armour of technology.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/MzJiuBj6PNf7rRgVA" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-md-6">
+				<div class="mt-5 eachEvent slide-in snappit">
+					<h1>SNAPPIT</h1>
+					<H6>(PHOTOGRAPHY)</H6>
+					<p style="text-transform: uppercase;">Do you think you have the vision to paint a story through your captured pictures? If yes, then come and be part of Snappit and showcase your photography skills</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/Xk3MiBKHuyWdckAP7" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto mt-5 eachEvent slide-in pitch">
+					<h1>PITCH TO RICH</h1>
+					<H6>(START UP CHALLENGE - TECH SOLUTION)</H6>
+					<p style="text-transform: uppercase;">Do you have an innovative idea which you think will be a gamechanger? Do you think you can design an algorithm that could solve real life problems? Come participate in our start-up challenge and showcase your tech solution and presentation skills.</p>
+					<section class="eventButton">
+						<a href="https://forms.gle/sRKzzrAj25iisFgcA" class="btn btn-custom"><span>Register</span></a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</div>
+</body>
+<script src="./scripts/eventsJS.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- https://github.com/gijsroge/tilt.js -->
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+<script type="text/javascript">
+	let underlineAppear = ele => {
+		ele.children[0].children[1].style.transform = "translateX( 0% )"
+	}
+	let underlineDisappear = ele => {
+		ele.children[0].children[1].style.transform = "translateX( -150% )"
+	}
+	let toggleFlag = 1;
+
+	$(document).ready(function () {
+		$(".hamburger").click(function () {
+			toggleFlag *= -1;
+			$(this).toggleClass("is-active");
+			$(".menu-overlay").toggleClass("overlay-toggle");
+			if (toggleFlag == -1) {
+				$(".menu-container").css("z-index", "10");
+				setTimeout(() => {
+					$(".menu-heading").toggleClass("heading-toggle")
+				}, 300);
+			} else {
+				$(".menu-heading").toggleClass("heading-toggle");
+				setTimeout(() => {
+					$(".menu-container").css("z-index", "-1")
+				}, 700);
+			}
+		});
+	});
+
+	window.addEventListener('load', () => {
+        setTimeout( () => {
+            loaderFunction();
+        },1000 );
+   })
+
+    let loaderFunction = () => {
+        
+        let loaderWrapper = document.querySelector( ".loader-wrapper" );
+        loaderWrapper.style.opacity = "0";
+        loaderWrapper.style.background = "rgba(0, 0, 0, 0)";
+        setTimeout( () => {
+            loaderWrapper.style.display = "none";
+           
+        }, 1500 );
+       
+    }
+
+</script>
+
+</html>
